@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="casda">
+    <serverData>
+      <paths name="asdasd">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/Bookey/EventualSite" local="$PROJECT_DIR$" web="/cl17126/Bookey/EventualSite" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="casda">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="\tcc" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

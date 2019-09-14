@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a054f5d8-c749-49b5-a30b-0d04ac0fa9d0" name="asdasd" url="http://143.106.241.1">
+        <fileTransfer host="143.106.241.1" port="1609" rootFolder="/var/www/cl17126" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="1609" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="c941d9c1-3bab-467e-b5b0-4c8c3fa4711c" name="casda" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\tcc" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

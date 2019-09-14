@@ -1,0 +1,50 @@
+body {
+background-color: #F2F2F2;
+}
+
+.logo{
+	padding-top: 15%;
+}
+
+.centro{
+    left: 50%;
+}
+
+.tamFonte{
+	font-size: 18px;
+}
+
+.topo-fixo {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 2;
+}
+
+.titulo {
+font-size: 1.3rem;
+margin-left: 5%;
+margin-right: auto;
+}
+
+.formatListag {
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 150px;
+	background-color: gray; 
+}
+
+.imgListag {
+	height: 20%;
+}
+
+.section {
+	padding-top: 125px;
+}
+.tabs .indicator{
+	background-color: white;
+}
+
+.carrousel{
+	height: 500px;
+}
