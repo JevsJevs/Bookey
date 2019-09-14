@@ -92,7 +92,7 @@ private $apelido;
 
  //Demais metodos
 
-public function loadById($email)
+public function loadByEmail($email)
 {
         $sql = new Sql();
         $results = $sql->select("select * from Usuario where email = :EMAIL", array(":EMAIL"=>$email));
@@ -113,6 +113,7 @@ public function loadById($email)
     public function insere()
     {
         $sql = new Sql();
+        $encryptSenha = md5($this->getSenha());
 
         //verifica se já existe PK
         $results = $sql->select("select * from Usuario where email = :email",
@@ -126,7 +127,7 @@ public function loadById($email)
                     ':DNASC' => $this->getDnasc(),
                     ':NICK' => $this->getApelido(),
                     ':CEL' => $this->getCelular(),
-                    ':SENHA' => $this->getSenha(),
+                    ':SENHA' => $encryptSenha,
                     ':EMAIL' => $this->getEmail())
             );
             echo "Usuario Cadastrado!";
@@ -140,7 +141,8 @@ public function loadById($email)
         $this->setDnasc($dnasc);
         $this->setApelido($nick);
         $this->setEmail($email);
-        $encryptSenha = md5($this->setSenha($senha));
+        $this->setSenha($senha);
+        $encryptSenha = md5($this->getSenha());
 
         $sql = new Sql();
 
@@ -149,7 +151,7 @@ public function loadById($email)
                 ':DNASC' => $this->getDnasc(),
                 ':NICK' => $this->getApelido(),
                 ':CEL' => $this->getCelular(),
-                ':SENHA' => $this->getSenha(),
+                ':SENHA' => $encryptSenha,
                 ':EMAIL' => $this->getEmail())
         );
         echo "Cadastro Atualizado";
