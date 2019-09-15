@@ -63,6 +63,7 @@
 session_start();
 
 include ("EntraBd.php");
+require_once ("config.php");
 
 if($_SERVER["REQUEST_METHOD"] === 'POST')
 {
@@ -78,12 +79,22 @@ if($_SERVER["REQUEST_METHOD"] === 'POST')
             echo "Todos os parametros são obrigatórios, refaça o formulário";
         } else {
 
-            if(cadastraQuarto($codQuarto,$nQuart,$imagem,$valDia))
+           /* if(cadastraQuarto($codQuarto,$nQuart,$imagem,$valDia))
             {
                 echo "<span> Quarto Cadastrado!</span>";
                 header("location:LogadoHotel.php");
             }else
-                echo "<span> Falha ao cadastrar</span>";
+                echo "<span> Falha ao cadastrar</span>";*/
+           $quarto = new Quarto();
+
+           $quarto->setNumQuarto($nQuart);
+           $quarto->setIdHotel($codQuarto);
+           $quarto->setImagem($imagem);
+           $quarto->setValDia($valDia);
+
+           $quarto->cadastrar();
+
+           header("location:LogadoHotel.php");
         }
     }
     catch (PDOException $e)

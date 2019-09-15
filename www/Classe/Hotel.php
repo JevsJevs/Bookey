@@ -7,6 +7,7 @@ class Hotel
     private $senha;
     private $email;
     private $telefone;
+    private $id;
 
 //setter
     public function setNome($nome)
@@ -29,6 +30,11 @@ class Hotel
         $this->telefone = $telefone;
     }
 
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
 //getter
     public function getNome()
     {
@@ -49,6 +55,11 @@ class Hotel
     {
         return $this->telefone;
     }
+
+    public function getId()
+    {
+        return $this->id;
+    }
 //////////////////////////////////////////////
 
     public function insere()
@@ -57,7 +68,7 @@ class Hotel
         $sql = new Sql();
         $encryptSenha = md5($this->getSenha());
 
-        //verifica se já existe PK
+        //verifica se já existe email
         $results = $sql->select("select * from Hotel where email = :email",
             array(':email' => $this->getEmail()));
         if (count($results) > 0) {
@@ -72,4 +83,33 @@ class Hotel
             echo "Usuario Cadastrado!";
         }
     }
+
+    public function __construct($email)
+    {
+        $sql = new Sql();
+
+        $row = $sql->select("SELECT * FROM Hotel Where email=:EMAIL",array(":EMAIL"=>$email));
+
+        if(count($row)>0)
+        {
+            $resultado = $row[0];
+
+            $this->setId($resultado['idHotel']);
+            $this->setEmail($resultado['email']);
+            $this->setNome($resultado['nome']);
+            $this->setTelefone($resultado['Telefone']);
+            $this->setSenha($resultado['senha']);
+        }
+    }
+
+    public function __toString()
+    {
+        return "Id: ".$this->getId()."<br>Email: ".$this->getEmail()."<br>Senha: ".$this->getSenha();
+    }
+
+    public function __sleep()
+    {
+        return array('id','email','nome','telefone','senha');
+    }
+
 }

@@ -1,0 +1,132 @@
+<?php
+
+
+class Quarto
+{
+    private $idHotel;
+    private $numQuarto;
+    private $imagem;
+    private $valDia;
+
+    // AS VEZES NULL
+    private $idUser;
+    private $senhaEntra;
+
+
+    public function getIdHotel()
+    {
+        return $this->idHotel;
+    }
+
+
+    public function getNumQuarto()
+    {
+        return $this->numQuarto;
+    }
+
+
+    public function getImagem()
+    {
+        return $this->imagem;
+    }
+
+
+    public function getValDia()
+    {
+        return $this->valDia;
+    }
+
+    // as vezes nulos
+    public function getIdUser()
+    {
+        return $this->idUser;
+    }
+
+
+    public function getSenhaEntra()
+    {
+        return $this->senhaEntra;
+    }
+////////////////////////////////////////////
+
+    public function setIdHotel($idHotel)
+    {
+        $this->idHotel = $idHotel;
+    }
+
+    public function setNumQuarto($numQuarto)
+    {
+        $this->numQuarto = $numQuarto;
+    }
+
+    public function setImagem($imagem)
+    {
+        $this->imagem = $imagem;
+    }
+
+    public function setValDia($valDia)
+    {
+        $this->valDia = $valDia;
+    }
+
+    //as vezes nulos
+
+    public function setIdUser($idUser)
+    {
+        $this->idUser = $idUser;
+    }
+
+    public function setSenhaEntra($senhaEntra)
+    {
+        $this->senhaEntra = $senhaEntra;
+    }
+
+//////////////////////////////////////////
+
+    public function cadastrar()
+    {
+        $sql = new Sql();
+
+        $sql->query("INSERT INTO Quarto (codUser,codHotel,nQuarto,Img,senhaEntra,valDiaria) VALUES (null,:codHotel,:numero,:imagem,null,:valDia)",
+            array(
+               ":codHotel"=>$this->getIdHotel(),
+                ":numero"=>$this->getNumQuarto(),
+                ":imagem"=>$this->getImagem(),
+                ":valDia"=>$this->getValDia()
+            ));
+        echo "Quarto Cadastrado";
+    }
+
+    public function loadByHotelNum($emailHotel,$numero)
+    {
+        $sql = new Sql();
+        $idHotel = $sql->query("SELECT idHotel FROM Hotel where email =:email ", array(":email"=>$emailHotel));
+
+        $results = $sql->select("select * from Quarto where numero = :NUM AND codHotel = :HOTEL", array(":NUM"=>$numero, ":HOTEL"=>$idHotel));
+
+        if (count($results) > 0) {
+            $row = $results[0];
+
+            $this->setIdHotel($row['codHotel']);
+            $this->setNumQuarto($row['nQuarto']);
+            $this->setImagem($row['Img']);
+            $this->setValDia($row['valDiaria']);
+
+            $this->setIdUser($row['codUser']);
+            $this->setSenhaEntra($row['senhaEntra']);
+        }
+    }
+
+    public function reservar($usuario,$cIn,$cOut)
+    {
+        $sql = new Sql();
+
+        $sql->query("UPDATE QUARTO SET codUsuario = :USUARIO,checkIn= :CIN, checkOut = :COUT ",
+                array(
+                    ":USUARIO"=>$usuario,
+                    ":CIN"=>$cIn,
+                    ":COUT"=>$cOut
+                ));
+        echo "reserva Concluida";
+    }
+}

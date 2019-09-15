@@ -13,8 +13,9 @@
 <?php
 session_start();
 include ("EntraBd.php");
+require_once ("config.php");
 
-if(isset($_SESSION["emailH"]) && isset($_SESSION["senhaH"]))
+if(isset($_SESSION["Hotel"]))
 {
     echo "
     
@@ -46,11 +47,13 @@ if(isset($_SESSION["emailH"]) && isset($_SESSION["senhaH"]))
                 ";
         try{
             $pdo = conectarBD();
+            $hotel = unserialize($_SESSION["Hotel"]);
 
-            $primaryHotel = obtemPrimary($_SESSION["emailH"],"Hotel");
+            echo $hotel;
 
+            $var = $hotel->getId();
             $stmt= $pdo->prepare("select * from Quarto WHERE codHotel = :identific order by nQuarto");
-            $stmt->bindParam(":identific",$primaryHotel);
+            $stmt->bindParam(":identific",$var);
 
             $stmt->execute();
 
@@ -85,10 +88,10 @@ if(isset($_SESSION["emailH"]) && isset($_SESSION["senhaH"]))
             try{
                 $pdo = conectarBD();
 
-                $primaryHotel = obtemPrimary($_SESSION["emailH"],"Hotel");
+                $_SESSION["Hotel"] = $hotel;
 
                 $stmt= $pdo->prepare("select * from Quarto WHERE codHotel = :identific AND codUser IS NOT NULL order by nQuarto");
-                $stmt->bindParam(":identific",$primaryHotel);
+                $stmt->bindParam(":identific",$hotel->getId());
 
                 $stmt->execute();
 

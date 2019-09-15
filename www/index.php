@@ -101,6 +101,7 @@
 if($_SERVER["REQUEST_METHOD"] === 'POST')
 {
     include ("EntraBd.php");
+    require_once ("config.php");
 
         switch ($_POST["action"])
         {
@@ -134,15 +135,16 @@ if($_SERVER["REQUEST_METHOD"] === 'POST')
                     $user = $_POST["user"];
                     $senha = $_POST["senha"];
 
-                    if(login($user,$senha,"Hotel"))
+                    $hotel = new Hotel($user);
+
+                    if(strcmp(md5($senha),$hotel->getSenha()))
                     {
                         session_start();
-                        $_SESSION["emailH"] = $user;
-                        $_SESSION["senhaH"] = $senha;
-
+                        $_SESSION["Hotel"] = serialize($hotel);
                         header("location:LogadoHotel.php");
                     }
-                    echo "Senha Incorreta";
+                    else
+                        echo "Senha Incorreta";
                 }
                 catch (PDOException $e)
                 {
