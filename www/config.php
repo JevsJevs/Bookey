@@ -13,4 +13,6 @@ spl_autoload_register(function($nameClass) {
     }
 });
 
+define("MaxSize",(2*1024*1024));
+
 ?>

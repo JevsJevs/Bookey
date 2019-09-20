@@ -1,11 +1,28 @@
 <?php
 session_start();
 include ("EntraBd.php");
+require_once ("config.php");
 
-if(isset($_SESSION["user"]) && isset($_SESSION["senha"])) {
+if(isset($_SESSION["logUser"])){
     $pdo = conectarBD();
 
+    $usuario = new User();
+
+    $usuario = unserialize($_SESSION["logUser"]);
+
+
+    $data = getdate();
+
+    $hoje = date("Y-m-d",strtotime("now"));
+    $amanha = date("Y-m-d",strtotime("now +1 day"));
+
     echo "
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <html>
         <head>
             <title>Logado</title>
@@ -36,18 +53,12 @@ if(isset($_SESSION["user"]) && isset($_SESSION["senha"])) {
         ";
 
     try{
-        $hotel = $_POST["hotelNome"];
-        //$idUser  = obtemPrimary($hotel,"Hotel");
-        $stmt= $pdo->prepare("select * from Hotel WHERE codHotel = :idHotel");
-        $stmt->bindParam(":idHotel",$hotel);
-        $stmt->execute();
+        $idhotl = $_GET["codHotel"];
 
-        while($roww = $stmt->fetch())
-        {
-            echo"
-            <div class='col s12 l2'><img src=\"$roww[Imgem]\"></div>            
-            ";
-        }
+        $hotel = new Hotel();
+
+        $hotel->loadById($idhotl);
+
     }
     catch (PDOException $exception)
     {
@@ -56,27 +67,52 @@ if(isset($_SESSION["user"]) && isset($_SESSION["senha"])) {
     finally{
         echo "
             <form name='reservar' method='post'>
-                Data Check-in:
-                <input type='date' name='in'>
-                
-                Data Check-out:
-                <input type='date' name='out'>
-                
+            
+                <div class='row'>
+                    <div class='col s4 offset-s1'>
+                        Data Check-in:
+                        <input type='date' name='in' min='$hoje'> <!-- min dia atual-->
+                     </div>
+                     <div class='col s4 offset-s1'>
+                        Data Check-out:
+                        <input type='date' name='out' min='$amanha'> <!-- min 1 dia após o outro, ajustar pois a variavel amanha nn é dinamica --> 
+                     </div>   
+                </div> 
                 
                 <!-- Inserir algo que contabilize o valor com base nas datas inseridas. 5 dias selecionados = 5 * diaria -->
                 
-                <input type='submit'>
+                <div class='row'>
+                    <div class='col s3 offset-s5'>
+                        <input type='submit'>                
+                    </div>
+                </div>
                          
             </form>
         ";
 
-        if($_SERVER["REQUEST_METHOD"] === 'POST') {
+        echo $hoje;
+        echo $amanha;
 
+        if($_SERVER["REQUEST_METHOD"] === 'POST')
+        {
+            //insira formatacao antes
 
+            $ckIn = $_POST['in'];
+            $ckout = $_POST['out'];
+
+            if($ckIn>$ckout)
+            {
+                echo "<span id='error'>Estadia invalida</span>";
+            }
+            else {
+                $quarto = new Quarto();
+
+                $quarto->primLivre($hotel->getId());
+
+                $subtotal = (($ckout - $ckIn) / 86400) * $quarto->getValDia();
+
+                $quarto->reservar($usuario->getId(), $ckIn, $ckout, $subtotal);
+            }
         }
-
     }
-
-
-
 }

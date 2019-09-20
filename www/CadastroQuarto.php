@@ -31,7 +31,7 @@
 
     <div class="col s10 m10 l10 offset-s1 ">
 
-        <form id="Cadastra" method="post" onsubmit="LogadoHotel.php">
+        <form id="Cadastra" method="post" enctype="multipart/form-data">
 
             <div class="row">
                 <div class="col s5 offset-s1">Numero do quarto:<br><input type="number" name="numero"></div>
@@ -65,40 +65,56 @@ session_start();
 include ("EntraBd.php");
 require_once ("config.php");
 
-if($_SERVER["REQUEST_METHOD"] === 'POST')
-{
-    try {
+ $hotel = new Hotel();
 
-        $nQuart = $_POST["numero"];
-        $imagem = $_POST["img"];
-        $valDia = $_POST["valdia"]; // formatar o valor para float
-        $codQuarto = obtemPrimary($_SESSION["emailH"],"Hotel");
+ $hotel = unserialize($_SESSION["myhotel"]);
+
+if(isset($_SESSION["myhotel"])) {
+    if ($_SERVER["REQUEST_METHOD"] === 'POST') {
+
+        try {
+
+            $nQuart = $_POST["numero"];
 
 
-        if ((trim($nQuart) == '') || (trim($imagem) == '') || (trim($valDia) == '')) {
-            echo "Todos os parametros são obrigatórios, refaça o formulário";
-        } else {
+            $foto = $_FILES['img'];
+            $nomeft = $foto['name'];
+            $tipoft = $foto['type'];
+            $tamft = $foto['size'];
 
-           /* if(cadastraQuarto($codQuarto,$nQuart,$imagem,$valDia))
-            {
-                echo "<span> Quarto Cadastrado!</span>";
+            $valDia = $_POST["valdia"]; // formatar o valor para float
+            //$codQuarto = obtemPrimary($_SESSION["emailH"],"Hotel");
+
+
+            if ((trim($nQuart) == '') || (trim($nomeft) == '') || (trim($valDia) == '')) {
+                echo "Todos os parametros são obrigatórios, refaça o formulário";
+            } else if (!preg_match("/^image\/(jpeg|png|gif)$/", $tipoft)) {
+                echo "<span id='error'>Imagem invalida</span>";
+            } else if ($tamft > MaxSize) {
+                echo "<span id='error'>Imagem grande demais. Max 2mb</span>";
+            } else {
+
+                /* if(cadastraQuarto($codQuarto,$nQuart,$imagem,$valDia))
+                 {
+                     echo "<span> Quarto Cadastrado!</span>";
+                     header("location:LogadoHotel.php");
+                 }else
+                     echo "<span> Falha ao cadastrar</span>";*/
+                $fileBin = file_get_contents($foto['tmp_name']);
+
+                $quarto = new Quarto();
+
+                $quarto->setNumQuarto($nQuart);
+                $quarto->setIdHotel($hotel->getId());
+                $quarto->setImagem($fileBin);
+                $quarto->setValDia($valDia);
+
+                $quarto->cadastrar();
+
                 header("location:LogadoHotel.php");
-            }else
-                echo "<span> Falha ao cadastrar</span>";*/
-           $quarto = new Quarto();
-
-           $quarto->setNumQuarto($nQuart);
-           $quarto->setIdHotel($codQuarto);
-           $quarto->setImagem($imagem);
-           $quarto->setValDia($valDia);
-
-           $quarto->cadastrar();
-
-           header("location:LogadoHotel.php");
+            }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
         }
-    }
-    catch (PDOException $e)
-    {
-        echo "Error: " . $e->getMessage();
     }
 }

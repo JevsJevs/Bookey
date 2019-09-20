@@ -7,6 +7,7 @@ class Quarto
     private $numQuarto;
     private $imagem;
     private $valDia;
+    private $valTot;
 
     // AS VEZES NULL
     private $idUser;
@@ -42,10 +43,14 @@ class Quarto
         return $this->idUser;
     }
 
-
     public function getSenhaEntra()
     {
         return $this->senhaEntra;
+    }
+
+    public function getValTot()
+    {
+        return $this->valTot;
     }
 ////////////////////////////////////////////
 
@@ -81,6 +86,10 @@ class Quarto
         $this->senhaEntra = $senhaEntra;
     }
 
+    public function setValTot($valTot)
+    {
+        $this->valTot = $valTot;
+    }
 //////////////////////////////////////////
 
     public function cadastrar()
@@ -117,15 +126,58 @@ class Quarto
         }
     }
 
-    public function reservar($usuario,$cIn,$cOut)
+    public function loadByidHnum($idh,$numero)
     {
         $sql = new Sql();
 
-        $sql->query("UPDATE QUARTO SET codUsuario = :USUARIO,checkIn= :CIN, checkOut = :COUT ",
+        $results = $sql->select("select * from Quarto where numero = :NUM AND codHotel = :HOTEL", array(":NUM"=>$numero, ":HOTEL"=>$idh));
+
+        if (count($results) > 0) {
+            $row = $results[0];
+
+            $this->setIdHotel($row['codHotel']);
+            $this->setNumQuarto($row['nQuarto']);
+            $this->setImagem($row['Img']);
+            $this->setValDia($row['valDiaria']);
+
+            $this->setIdUser($row['codUser']);
+            $this->setSenhaEntra($row['senhaEntra']);
+        }
+    }
+
+    public function primLivre($idh)
+    {
+        $sql = new Sql();
+
+        $results = $sql->select("select * from Quarto where codHotel = :HOTEL AND codUser=NULL  AND checkIn=NULL AND checkOut=NULL",
+            array(":HOTEL"=>$idh));
+
+        if (count($results) > 0) {
+            $row = $results[0];
+
+            $this->setIdHotel($row['codHotel']);
+            $this->setNumQuarto($row['nQuarto']);
+            $this->setImagem($row['Img']);
+            $this->setValDia($row['valDiaria']);
+
+            $this->setIdUser($row['codUser']);
+            $this->setSenhaEntra($row['senhaEntra']);
+        }
+    }
+
+    public function reservar($usuario,$cIn,$cOut,$valT)
+    {
+        $sql = new Sql();
+
+        $sql->query("UPDATE QUARTO SET codUsuario = :USUARIO,checkIn= :CIN, checkOut = :COUT, valTot = :VTOT WHERE codHotel= :CODH AND
+                    nQuarto=:NQUART",
                 array(
                     ":USUARIO"=>$usuario,
                     ":CIN"=>$cIn,
-                    ":COUT"=>$cOut
+                    ":COUT"=>$cOut,
+                    ":VTOT"=>$valT,
+                    ":CODH"=>$this->getIdHotel(),
+                    ":NQUART"=>$this->getNumQuarto()
                 ));
         echo "reserva Concluida";
     }

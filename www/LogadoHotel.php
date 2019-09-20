@@ -15,7 +15,7 @@ session_start();
 include ("EntraBd.php");
 require_once ("config.php");
 
-if(isset($_SESSION["Hotel"]))
+if(isset($_SESSION["myhotel"]))
 {
     echo "
     
@@ -46,10 +46,11 @@ if(isset($_SESSION["Hotel"]))
                 
                 ";
         try{
-            $pdo = conectarBD();
-            $hotel = unserialize($_SESSION["Hotel"]);
+            $hotel = new Hotel();
 
-            echo $hotel;
+            $pdo = conectarBD();
+
+            $hotel = unserialize($_SESSION["myhotel"]);
 
             $var = $hotel->getId();
             $stmt= $pdo->prepare("select * from Quarto WHERE codHotel = :identific order by nQuarto");
@@ -69,11 +70,18 @@ if(isset($_SESSION["Hotel"]))
                         <div class=\"card-content white-text\">
                           <div class=\"row\">
                               <span class=\"card-title\">$row[nQuarto]</span>
-                              $row[Img]
+                ";
+
+                if($row['Img']==null)
+                    echo "Sem Foto";
+                else
+                    echo "<img src='data:image;base64,".base64_encode($row["Img"])."'>";
+
+                echo "
                               <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
                               <p>Valor da diária: $row[valDiaria] </p>
                           </div>
-                        </div>
+                        </div>  
                       </div>
                     </div>
                 </div>";
@@ -88,10 +96,9 @@ if(isset($_SESSION["Hotel"]))
             try{
                 $pdo = conectarBD();
 
-                $_SESSION["Hotel"] = $hotel;
 
                 $stmt= $pdo->prepare("select * from Quarto WHERE codHotel = :identific AND codUser IS NOT NULL order by nQuarto");
-                $stmt->bindParam(":identific",$hotel->getId());
+                $stmt->bindParam(":identific",$var);
 
                 $stmt->execute();
 

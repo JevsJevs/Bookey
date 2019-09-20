@@ -1,11 +1,12 @@
 <?php
 session_start();
 include ("EntraBd.php");
+require_once ("config.php");
 
-if(isset($_SESSION["user"]) && isset($_SESSION["senha"]))
+if(isset($_SESSION["logUser"]))
 {
     $pdo = conectarBD();
-    $hotel = $_POST["hotel"];
+    //$hotel = $_POST["hotel"];
 
     echo "
     
@@ -68,12 +69,14 @@ if(isset($_SESSION["user"]) && isset($_SESSION["senha"]))
             //foreach($resultado as $row
         {
             //Formatar os cards que vao conter os hotéis.
-           echo " <div class=\"row\">
+           echo " 
+             <div class=\"row\">
 		        <div class=\"col s12 m12 l12 xl12\">
 		          <div class=\"card blue-grey darken-1\">
 		            <div class=\"card-content white-text\">
 		              <div class=\"row\">
 		                  <span class=\"card-title\">$row[nome]</span>
+		                  <a href='Reservando.php?codHotel=$row[idHotel]'> Reservar</a>
 		                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
 		                </div>
 		            </div>
@@ -96,12 +99,17 @@ if(isset($_SESSION["user"]) && isset($_SESSION["senha"]))
             ";
 
         try{
-            $idUser  = obtemPrimary($_SESSION["user"],"Usuario");
-            $stmt= $pdo->prepare("select * from Quarto WHERE codUser = :codUser order by codHotel");
-            $stmt->bindParam(":codUser",$idUser);
-            $stmt->execute();
+            //$idUser  = obtemPrimary($_SESSION["user"],"Usuario");
+            $usuario = new User();
+            $usuario = unserialize($_SESSION['logUser']);
 
-            while($roww = $stmt->fetch())
+           /* $stmt= $pdo->prepare("select * from Quarto WHERE codUser = :codUser order by codHotel");
+            $stmt->bindParam(":codUser",$idUser);
+            $stmt->execute();*/
+
+           $roww = $usuario->seusQuartos();
+
+            for($i=0;$i<sizeof($roww);$i++)
             {
               echo"  <div class=\"row\">
                     <div class=\"col s12 m12 l12 xl12\">

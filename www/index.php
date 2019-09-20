@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Só de Cenoura Garçom</title>
+    <title>Login Bookey</title>
     <link rel="stylesheet" href="icons/material.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/classes.css">
@@ -111,16 +111,29 @@ if($_SERVER["REQUEST_METHOD"] === 'POST')
                 {
                     $user = $_POST["user"];
                     $senha = $_POST["senha"];
+                    $usuario = new User();
+
+                    $usuario->loadByEmail($user);
                     // fazer o esquema do switch($_POST[]) , 2 forms na mesma pagina.
 
-                    if(login($user,$senha,"Usuario"))
+                    /*if(login($user,$senha,"Usuario"))
                     {
                         session_start();
                         $_SESSION["user"] = $user;
                         $_SESSION["senha"] = $senha;
 
                         header("location:pag logada.php");
+                    }*/
+
+                    if( !(strcmp(md5($senha),$usuario->getSenha() ) ) )
+                    {
+                        session_start();
+                        $_SESSION["logUser"] = serialize($usuario);
+                        header("location:pag logada.php");
                     }
+                    else
+                        echo "Senha Incorreta";
+
                 }
                 catch (PDOException $e)
                 {
@@ -135,12 +148,13 @@ if($_SERVER["REQUEST_METHOD"] === 'POST')
                     $user = $_POST["user"];
                     $senha = $_POST["senha"];
 
-                    $hotel = new Hotel($user);
+                    $hotel = new Hotel();
+                    $hotel->loadByemail($user);
 
-                    if(strcmp(md5($senha),$hotel->getSenha()))
+                    if( !(strcmp(md5($senha),$hotel->getSenha() ) ) )
                     {
                         session_start();
-                        $_SESSION["Hotel"] = serialize($hotel);
+                        $_SESSION["myhotel"] = serialize($hotel);
                         header("location:LogadoHotel.php");
                     }
                     else

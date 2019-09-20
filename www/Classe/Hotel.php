@@ -84,7 +84,25 @@ class Hotel
         }
     }
 
-    public function __construct($email)
+    public function loadById($id)
+    {
+        $sql = new Sql();
+
+        $linha = $sql->select("SELECT * FROM Hotel WHERE idHotel = :ID", array(":ID"=>$id));
+
+        if(count($linha))
+        {
+            $resultado = $linha[0];
+
+            $this->setId($resultado['idHotel']);
+            $this->setEmail($resultado['email']);
+            $this->setNome($resultado['nome']);
+            $this->setTelefone($resultado['Telefone']);
+            $this->setSenha($resultado['senha']);
+        }
+    }
+
+    public function loadByemail($email)
     {
         $sql = new Sql();
 
@@ -102,6 +120,16 @@ class Hotel
         }
     }
 
+
+    /*public function quartOcup()
+    {
+        $sql = new Sql();
+
+        $row = $sql->select("SELECT * FROM Quarto WHERE codHotel = :identific AND codUser IS NOT NULL ORDER BY nQuarto",array(":identid"=>$this->getId()));
+
+        return $row;
+    }*/
+
     public function __toString()
     {
         return "Id: ".$this->getId()."<br>Email: ".$this->getEmail()."<br>Senha: ".$this->getSenha();
@@ -110,6 +138,18 @@ class Hotel
     public function __sleep()
     {
         return array('id','email','nome','telefone','senha');
+    }
+
+    public function __wakeup()
+    {
+        // TODO: Implement __wakeup() method.
+        return array(
+            $this->getId(),
+            $this->getEmail(),
+            $this->getNome(),
+            $this->getTelefone(),
+            $this->getSenha()
+        );
     }
 
 }

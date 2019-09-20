@@ -156,4 +156,12 @@ public function loadByEmail($email)
         );
         echo "Cadastro Atualizado";
     }
+
+    public function seusQuartos()
+    {
+        $sql = new Sql();
+
+        $result = $sql->select("SELECT * FROM Quarto WHERE codUser = :CODUSER order by codHotel", array(":CODUSER"=>$this->getId()));
+        return $result;
+    }
 }
