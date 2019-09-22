@@ -38,9 +38,16 @@ margin-right: auto;
 	height: 20%;
 }
 
+.retrato{
+	height: 120px;
+	width: 1800px;
+	padding-left: 500px;
+}
+
 .section {
 	padding-top: 125px;
 }
+
 .tabs .indicator{
 	background-color: white;
 }

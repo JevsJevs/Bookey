@@ -120,6 +120,20 @@ class Hotel
         }
     }
 
+    public function checkout($numQuarto)
+    {
+        $sql = new Sql();
+
+        $sql->query("UPDATE Quarto SET codUser = NULL,checkIn= NULL, checkOut = NULL, valTot = NULL WHERE codHotel= :CODH AND
+                    nQuarto=:NQUART",
+            array(
+                ":CODH"=>$this->getId(),
+                ":NQUART"=>$numQuarto
+            ));
+        echo "reserva Concluida";
+    }
+
+
 
     /*public function quartOcup()
     {
@@ -151,5 +165,6 @@ class Hotel
             $this->getSenha()
         );
     }
+
 
 }

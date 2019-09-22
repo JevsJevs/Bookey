@@ -40,6 +40,8 @@ if(isset($_SESSION["myhotel"]))
             </ul>
         </div>
         
+        <img  class='retrato' src=\"img/logo.png\">
+        
         
         <div class=\"section\" id=\"estrut\">
                 <a href='CadastroQuarto.php'><h1>+ Adicionar Quarto</h1></a>
@@ -72,10 +74,10 @@ if(isset($_SESSION["myhotel"]))
                               <span class=\"card-title\">$row[nQuarto]</span>
                 ";
 
-                if($row['Img']==null)
+                if($row['Img']==NULL)
                     echo "Sem Foto";
                 else
-                    echo "<img src='data:image;base64,".base64_encode($row["Img"])."'>";
+                    echo "<img class='retrato' src='data:image;base64,".base64_encode($row["Img"])."'>";
 
                 echo "
                               <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
@@ -84,7 +86,9 @@ if(isset($_SESSION["myhotel"]))
                         </div>  
                       </div>
                     </div>
-                </div>";
+                </div>
+                <img class='portrait' src=\"img/logo.png\">
+                ";
             }
 
             echo "
@@ -116,14 +120,13 @@ if(isset($_SESSION["myhotel"]))
                               <img class=\"imgListag col s4 m4 g4\" src=\" $row[Img] \">
                               <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
                               <p>Valor da diária: $row[valDiaria] - Usuário No: $row[codUser] </p>
+                              <a href='TerminaReserva.php/?numeroQ=$row[nQuarto]'>Terminar Reserva - CheckOut</a>
                           </div>
                         </div>
                       </div>
                     </div>
                 </div>";
                 }
-
-
             }
             catch (PDOException $e)
             {

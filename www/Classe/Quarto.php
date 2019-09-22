@@ -145,11 +145,16 @@ class Quarto
         }
     }
 
+    public function __toString()
+    {
+        return "Quarto <br/>Id: ".$this->getIdHotel()."<br>Numero: ".$this->getNumQuarto()."<br>Senha: ".$this->getIdUser();
+    }
+
     public function primLivre($idh)
     {
         $sql = new Sql();
 
-        $results = $sql->select("select * from Quarto where codHotel = :HOTEL AND codUser=NULL  AND checkIn=NULL AND checkOut=NULL",
+        $results = $sql->select("select * from Quarto where codHotel = :HOTEL AND codUser IS NULL  AND checkIn IS NULL AND checkOut IS NULL;",
             array(":HOTEL"=>$idh));
 
         if (count($results) > 0) {
@@ -169,7 +174,7 @@ class Quarto
     {
         $sql = new Sql();
 
-        $sql->query("UPDATE QUARTO SET codUsuario = :USUARIO,checkIn= :CIN, checkOut = :COUT, valTot = :VTOT WHERE codHotel= :CODH AND
+        $sql->query("UPDATE Quarto SET codUser = :USUARIO,checkIn= :CIN, checkOut = :COUT, valTot = :VTOT WHERE codHotel= :CODH AND
                     nQuarto=:NQUART",
                 array(
                     ":USUARIO"=>$usuario,

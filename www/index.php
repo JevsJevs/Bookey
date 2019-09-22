@@ -12,7 +12,7 @@
 
 
     <h5 class="center-align logo">
-        <img src="img/logo.png">
+        <img  class="retrato" src="img/logo.png">
     </h5>
 
     <div class="row">
@@ -27,7 +27,7 @@
     <div class="container">
 
         <div id="User">
-            <form name="login" method="post">
+            <form name="user" method="post">
                 <div class="row">
                     <div class="col s8 offset-s2">
                         <span>Login: <input type="email" name="user" placeholder="Email"></span>
@@ -57,7 +57,7 @@
 
 
         <div id="Hotel">
-            <form name="login" method="post">
+            <form name="hotel" method="post">
                 <div class="row">
                     <div class="col s8 offset-s2">
                         <span>Login: <input type="email" name="user" placeholder="Email"></span>

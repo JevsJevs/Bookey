@@ -11,10 +11,17 @@ if(isset($_SESSION["logUser"])){
     $usuario = unserialize($_SESSION["logUser"]);
 
 
+
+    $idhotl = $_GET["codHotel"];
+
+    $hotel = new Hotel();
+
+    $hotel->loadById($idhotl);
+
     $data = getdate();
 
     $hoje = date("Y-m-d",strtotime("now"));
-    $amanha = date("Y-m-d",strtotime("now +1 day"));
+    //$amanha = date("Y-m-d",strtotime("now +1 day"));
 
     echo "
         <br/>
@@ -52,19 +59,8 @@ if(isset($_SESSION["logUser"])){
         </div>
         ";
 
-    try{
-        $idhotl = $_GET["codHotel"];
-
-        $hotel = new Hotel();
-
-        $hotel->loadById($idhotl);
-
-    }
-    catch (PDOException $exception)
+    if(isset($hotel))
     {
-        echo "Error".$exception->getMessage();
-    }
-    finally{
         echo "
             <form name='reservar' method='post'>
             
@@ -75,7 +71,7 @@ if(isset($_SESSION["logUser"])){
                      </div>
                      <div class='col s4 offset-s1'>
                         Data Check-out:
-                        <input type='date' name='out' min='$amanha'> <!-- min 1 dia após o outro, ajustar pois a variavel amanha nn é dinamica --> 
+                        <input type='date' name='out' min='$hoje'> <!-- min 1 dia após o outro, ajustar pois a variavel amanha nn é dinamica --> 
                      </div>   
                 </div> 
                 
@@ -91,7 +87,6 @@ if(isset($_SESSION["logUser"])){
         ";
 
         echo $hoje;
-        echo $amanha;
 
         if($_SERVER["REQUEST_METHOD"] === 'POST')
         {
@@ -107,12 +102,19 @@ if(isset($_SESSION["logUser"])){
             else {
                 $quarto = new Quarto();
 
-                $quarto->primLivre($hotel->getId());
+                $quarto->primLivre($idhotl);
 
-                $subtotal = (($ckout - $ckIn) / 86400) * $quarto->getValDia();
+                echo $quarto;
+                echo "<br/>";
+                echo $usuario->getId();
+
+                $subtotal = ((strtotime($ckout) - strtotime($ckIn)) / 86400) * $quarto->getValDia();
 
                 $quarto->reservar($usuario->getId(), $ckIn, $ckout, $subtotal);
+
+                header( "location:pag logada.php");
             }
         }
+
     }
 }
