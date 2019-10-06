@@ -5,24 +5,23 @@
     <meta charset="utf-8">
     <title>Login Bookey</title>
     <link rel="stylesheet" href="icons/material.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="cascata/materialize.min.css">
+    <link rel="stylesheet" href="cascata/classes.css">
 </head>
-<body>
+<body style="background-color:#B1D4EB"><!-- #78909c -->
 
+ <div class="container corFundo">
 
     <h5 class="center-align logo">
-        <img  class="retrato" src="img/logo.png">
+        <img class="retrato" src="img/logo.png">
     </h5>
 
-    <div class="row">
-        <div class="col s6 offset-s3">
-            <ul class="tabs">
-                <li class="tab col s6"><a href="#User">Usuário</a></li>
-                <li class="tab col s6"><a href="#Hotel">Hotel</a></li>
+        <div class="row">
+            <ul class="tabs blue darken-4">
+                <li class="tab col s6 white-text"><a href="#User"><p class="fonteBranca">Usuário</p></a></li>
+                <li class="tab col s6 white-text"><a href="#Hotel"><p class="fonteBranca">Hotel</p></a></li>
             </ul>
         </div>
-    </div>
 
     <div class="container">
 
@@ -30,9 +29,9 @@
             <form name="user" method="post">
                 <div class="row">
                     <div class="col s8 offset-s2">
-                        <span>Login: <input type="email" name="user" placeholder="Email"></span>
+                        <span class="fonteBranca">Login: <input type="email" name="user" placeholder="Email"></span>
 
-                        <span>Senha: <input type="password" name="senha"></span>
+                        <span class="fonteBranca">Senha: <input type="password" name="senha"></span>
                         <input type="hidden" name="action" value="user">
                     </div>
                 </div>
@@ -45,12 +44,12 @@
 
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <p class="centro tamFonte" >Não está cadastrado ainda?<br>     Cadastre-se já!</p>
+                    <p class="centro tamFonte fonteBranca" >Não está cadastrado ainda?<br>     Cadastre-se já!</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <p class="center-align tamFonte"><input type="button" value="Cadastre-se"></p>
+                    <p class="center-align tamFonte fonteBranca"><input type="button" value="Cadastre-se"></p>
                 </div>
             </div>
         </div>
@@ -60,9 +59,9 @@
             <form name="hotel" method="post">
                 <div class="row">
                     <div class="col s8 offset-s2">
-                        <span>Login: <input type="email" name="user" placeholder="Email"></span>
+                        <span class="fonteBranca">Login: <input type="email" name="user" placeholder="Email"></span>
 
-                        <span>Senha: <input type="password" name="senha"></span>
+                        <span class="fonteBranca">Senha: <input type="password" name="senha"></span>
                         <input type="hidden" name="action" value="hotel">
                     </div>
                 </div>
@@ -75,17 +74,19 @@
 
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <p class="centro tamFonte" >Não está cadastrado ainda?<br>     Cadastre-se já!</p>
+                    <p class="centro tamFonte fonteBranca"" >Não está cadastrado ainda?<br>     Cadastre-se já!</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <p class="center-align tamFonte"><input type="button" value="Cadastre-se"></p>
+                    <p class="center-align tamFonte  fonteBranca""><input type="button" value="Cadastre-se"></p>
                 </div>
             </div>
         </div>
 
     </div>
+
+ </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
@@ -132,7 +133,7 @@ if($_SERVER["REQUEST_METHOD"] === 'POST')
                         header("location:pag logada.php");
                     }
                     else
-                        echo "Senha Incorreta";
+                        echo "<span style='color: red'>Senha Incorreta</span>";
 
                 }
                 catch (PDOException $e)
@@ -158,7 +159,7 @@ if($_SERVER["REQUEST_METHOD"] === 'POST')
                         header("location:LogadoHotel.php");
                     }
                     else
-                        echo "Senha Incorreta";
+                        echo "<span style='color: red'>Senha Incorreta</span>";
                 }
                 catch (PDOException $e)
                 {

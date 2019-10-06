@@ -5,7 +5,7 @@
       <paths name="asdasd">
         <serverdata>
           <mappings>
-            <mapping deploy="/Bookey/EventualSite" local="$PROJECT_DIR$" web="/cl17126/Bookey/EventualSite" />
+            <mapping deploy="public_html/Bookey/EventualSite" local="$PROJECT_DIR$" web="/cl17126/Bookey/EventualSite" />
           </mappings>
         </serverdata>
       </paths>

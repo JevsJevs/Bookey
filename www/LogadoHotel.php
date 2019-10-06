@@ -6,8 +6,8 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="icons/material.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="cascata/materialize.min.css">
+    <link rel="stylesheet" href="cascata/classes.css">
 </head>
 
 <?php
@@ -26,6 +26,7 @@ if(isset($_SESSION["myhotel"]))
                 <div>
                     <i class=\"material-icons waves-effect waves-light waves-circle dropdown-button right\" data-activates=\"submenu\" data-gutter=\"5\" data-constrainwidth=\"false\">more_vert</i>
         
+                
                     <ul id=\"submenu\" class=\"dropdown-content\">
                         <li><a href=\"sass.html\">Sass</a></li>
                         <li><a href=\"badges.html\">Components</a></li>
@@ -34,10 +35,12 @@ if(isset($_SESSION["myhotel"]))
                 </div>
             </div>
         
-            <ul class=\"tabs cyan accent-2\">
-                <li class=\"tab\"> <a href=\"#estrut\" class=\"black-text waves-effect waves-dark\">Sua Estrutura</a> </li>
-                <li class=\"tab\"> <a href=\"#reserva\" class=\"black-text waves-effect waves-dark\">Seus Hóspedes</a> </li>
-            </ul>
+            <div class='row'>
+                <ul class=\"tabs cyan accent-2\">
+                    <li class=\"tab col s6 \"> <a href=\"#estrut\" class=\"black-text waves-effect waves-dark\">Sua Estrutura</a> </li>
+                    <li class=\"tab col s6 \"> <a href=\"#reserva\" class=\"black-text waves-effect waves-dark\">Seus Hóspedes</a> </li>
+                </ul>
+            </div>
         </div>
         
         <img  class='retrato' src=\"img/logo.png\">
@@ -70,24 +73,24 @@ if(isset($_SESSION["myhotel"]))
                     <div class=\"col s12 m12 l12 xl12\">
                       <div class=\"card blue-grey darken-1\">
                         <div class=\"card-content white-text\">
-                          <div class=\"row\">
-                              <span class=\"card-title\">$row[nQuarto]</span>
+                        <span class=\"card-title\">$row[nQuarto]</span>
+                          <div class=\"row\">                              
                 ";
 
-                if($row['Img']==NULL)
+                if($row['Img']=="")
                     echo "Sem Foto";
                 else
-                    echo "<img class='retrato' src='data:image;base64,".base64_encode($row["Img"])."'>";
+                    echo "<img class='retrato col s3' src='data:image;base64,".base64_encode($row["Img"])."'>";
 
                 echo "
-                              <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
-                              <p>Valor da diária: $row[valDiaria] </p>
+                              <p class='col s3'>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+                              <p class='col s2'>Valor da diária: $row[valDiaria] </p>
+                              <a  class='col s1' href='EditaQuarto.php?numero=$row[nQuarto]'> Alterar</a>
                           </div>
                         </div>  
                       </div>
                     </div>
                 </div>
-                <img class='portrait' src=\"img/logo.png\">
                 ";
             }
 

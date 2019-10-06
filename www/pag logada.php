@@ -17,8 +17,8 @@ if(isset($_SESSION["logUser"]))
             <meta charset=\"utf-8\">
         
             <link rel=\"stylesheet\" href=\"icons/material.css\">
-            <link rel=\"stylesheet\" href=\"css/materialize.min.css\">
-            <link rel=\"stylesheet\" href=\"css/classes.css\">
+            <link rel=\"stylesheet\" href=\"cascata/materialize.min.css\">
+            <link rel=\"stylesheet\" href=\"cascata/classes.css\">
         </head>
         <body>
         
@@ -35,20 +35,40 @@ if(isset($_SESSION["logUser"]))
                     </ul>
                 </div>
             </div>
-        
-            <ul class=\"tabs cyan accent-2\">
-                <li class=\"tab\"> <a href=\"#busca\" class=\"black-text waves-effect waves-dark\">Buscar Hotéís</a> </li>
-                <li class=\"tab\"> <a href=\"#reserva\" class=\"black-text waves-effect waves-dark\">Reservas Ativas</a> </li>
-            </ul>
+            <div class='row'>
+                <ul class=\"tabs cyan accent-2\">
+                    <li class=\"tab col s6\"> <a href=\"#busca\" class=\"black-text waves-effect waves-dark\">Buscar Hotéís</a> </li>
+                    <li class=\"tab col s6\"> <a href=\"#reserva\" class=\"black-text waves-effect waves-dark\">Reservas Ativas</a> </li>
+                </ul>
+            </div>
+            
         </div>
         
         <div class=\"section\" id=\"busca\">
         
-            <div class=\"carousel carousel-slider\">
-                <a class=\"carousel-item\" href=\"#one!\"><img src=\"https://lorempixel.com/800/800/food/1\"></a>
-                <a class=\"carousel-item\" href=\"#two!\"><img src=\"https://lorempixel.com/800/800/food/2\"></a>
-                <a class=\"carousel-item\" href=\"#three!\"><img src=\"https://lorempixel.com/800/800/food/3\"></a>
-                <a class=\"carousel-item\" href=\"#four!\"><img src=\"https://lorempixel.com/800/800/food/4\"></a>
+        <div class=\"carousel carousel-slider\">
+        
+            <a class=\"carousel-item\" href=\"#one!\"><img class='imgCarro' src=\"img/images.jpg \"></a>
+            <a class=\"carousel-item\" href=\"#two!\"><img class='imgCarro' src=\"img/images%20(2).jpg \"></a>
+            <a class=\"carousel-item\" href=\"#three!\"><img class='imgCarro' src=\"img/images%20(1).jpg \"></a>
+            <a class=\"carousel-item\" href=\"#four!\"><img class='imgCarro' src=\"https://lorempixel.com/250/250/nature/4\"></a>
+            <a class=\"carousel-item\" href=\"#five!\"><img class='imgCarro' src=\"https://lorempixel.com/250/250/nature/5\"></a>
+        
+        ";
+
+        /*$pdo = conectarBD();
+
+
+        $stmt= $pdo->prepare("select Img from Quarto ORDER BY RAND()");
+        $stmt->execute();
+
+        for($row = 0; $row<4;$row++)
+        {
+            $obj = $stmt->fetch();
+            echo "<a class=\"carousel-item\" href=\"#\"><img class='imgCarro' src='data:image;base64,".base64_encode($obj["Img"])."'>";
+        }*/
+
+        echo "
             </div>
         
         
@@ -57,7 +77,6 @@ if(isset($_SESSION["logUser"]))
             
             
             
-      
     ";
 
     try{

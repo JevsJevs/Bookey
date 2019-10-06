@@ -1,7 +1,7 @@
 <?php
 
 function conectarBD() {
-    $pdo = new PDO('mysql:host=143.106.241.1;dbname=cl17126;charser=utf-8','cl17126','cl*13022002');
+    $pdo = new PDO('mysql:host=143.106.241.3;dbname=cl17126;charser=utf-8','cl17126','cl*13022002');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $pdo;
 }

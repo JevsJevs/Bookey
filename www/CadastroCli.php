@@ -6,8 +6,8 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="icons/material.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="cascata/materialize.min.css">
+    <link rel="stylesheet" href="cascata/classes.css">
 
 </head>
 

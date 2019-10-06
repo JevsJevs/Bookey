@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a054f5d8-c749-49b5-a30b-0d04ac0fa9d0" name="asdasd" url="http://143.106.241.1">
-        <fileTransfer host="143.106.241.1" port="1609" rootFolder="/var/www/cl17126" accessType="SFTP">
+      <webServer id="a054f5d8-c749-49b5-a30b-0d04ac0fa9d0" name="asdasd" url="http://143.106.241.3">
+        <fileTransfer host="143.106.241.3" port="1609" rootFolder="/cl17126" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

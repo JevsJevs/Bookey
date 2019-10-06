@@ -10,7 +10,7 @@ class Sql extends PDO {
     private $conn;
 
     public function __construct() {
-      $this->conn = new PDO('mysql:host=143.106.241.1;dbname=cl17126;charset=utf8', 'cl17126', 'cl*13022002');
+      $this->conn = new PDO('mysql:host=143.106.241.3;dbname=cl17126;charset=utf8', 'cl17126', 'cl*13022002');
     }
 
     public function setParams($statement, $parameters=array()) {

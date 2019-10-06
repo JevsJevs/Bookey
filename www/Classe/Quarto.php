@@ -130,7 +130,7 @@ class Quarto
     {
         $sql = new Sql();
 
-        $results = $sql->select("select * from Quarto where numero = :NUM AND codHotel = :HOTEL", array(":NUM"=>$numero, ":HOTEL"=>$idh));
+        $results = $sql->select("select * from Quarto where nQuarto = :NUM AND codHotel = :HOTEL", array(":NUM"=>$numero, ":HOTEL"=>$idh));
 
         if (count($results) > 0) {
             $row = $results[0];
@@ -185,5 +185,20 @@ class Quarto
                     ":NQUART"=>$this->getNumQuarto()
                 ));
         echo "reserva Concluida";
+    }
+
+    public function AttValorImg($Img,$valD)
+    {
+        $sql = new Sql();
+
+        $sql->query("UPDATE Quarto SET Img = :IMAGEM,valDiaria= :VD WHERE codHotel= :CODH AND
+                    nQuarto=:NQUART",
+            array(
+                ":IMAGEM"=>$Img,
+                ":VD"=>$valD,
+                ":CODH"=>$this->getIdHotel(),
+                ":NQUART"=>$this->getNumQuarto()
+            ));
+        echo "Atualização Concluida";
     }
 }
