@@ -102,4 +102,61 @@ public class MétodosOpera {
         return retorno;
     }
     
+    public void apagarQuarto(Integer numeroQto,Integer nHotel)
+    {
+        try {
+            
+            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("DELETE FROM Quartos WHERE nQuarto="+numeroQto+" AND codHotel="+nHotel+";"); 
+            stmt.executeQuery();
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(MétodosOpera.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.print("Erro ao excluir");
+        }
+        
+    }
+    
+    public void editarQuarto(Integer valtot,Integer valdia,Integer hotel, Integer qto) // implementar imgagem
+    {
+        if((valtot == null) || (valdia == null) || (valtot == 0) || (valdia == 0))
+            System.err.print("Calma lá, preencha todos os campos");
+        else
+        {
+            
+            try {
+                PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("UPDATE Quarto SET valDiaria="+valdia+", valTot="+valtot+" WHERE codHotel="+hotel+" AND nQuarto"+qto+";");
+                stmt.execute();
+            } catch (SQLException ex) {
+                Logger.getLogger(MétodosOpera.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } 
+           
+    }
+    
+    public void novoQuarto(Integer Valdia) //imagem
+    {
+        if((Valdia==null) || (Valdia==0))
+        {
+            
+        }
+    }
+    
+    public boolean verifyNumqto(Integer numero,Integer hotel)
+    {
+        try {
+            boolean retorno = false;
+            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT * FROM Quarto WHERE codHotel="+hotel+" AND nQuarto="+numero+";");
+            ResultSet rs = stmt.executeQuery();
+            
+            if(!rs.next())
+            {
+                retorno = true;
+            }
+            
+            return retorno;
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(MétodosOpera.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }

@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d64f586-0ddd-428c-a790-35deb61e3cb8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/DesktopApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/DesktopApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/Funcoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/Funcoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/Logado.form" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/Logado.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/Logado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/Logado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/MétodosOpera.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/MétodosOpera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/TelaEstatica.form" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/TelaEstatica.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/TelaEstatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesktopApp/src/desktopapp/TelaEstatica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CadastroCli.php" beforeDir="false" afterPath="$PROJECT_DIR$/CadastroCli.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CadastroHotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/CadastroHotel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CadastroQuarto.php" beforeDir="false" afterPath="$PROJECT_DIR$/CadastroQuarto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CadastroUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/CadastroUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classe/Quarto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classe/Quarto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classe/Sql.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classe/Sql.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EntraBd.php" beforeDir="false" afterPath="$PROJECT_DIR$/EntraBd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogadoHotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/LogadoHotel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reservando.php" beforeDir="false" afterPath="$PROJECT_DIR$/Reservando.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/classes.css" beforeDir="false" afterPath="$PROJECT_DIR$/cascata/classes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/cascata/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/cascata/materialize.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pag logada.html" beforeDir="false" afterPath="$PROJECT_DIR$/pag logada.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pag logada.php" beforeDir="false" afterPath="$PROJECT_DIR$/pag logada.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="135" column="79" lean-forward="true" selection-start-line="135" selection-start-column="79" selection-end-line="135" selection-end-column="79" />
+            <state relative-caret-position="-2">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -49,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pag logada.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
+            <state relative-caret-position="-1071">
               <caret line="51" column="110" selection-start-line="51" selection-start-column="110" selection-end-line="51" selection-end-column="110" />
             </state>
           </provider>
@@ -58,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LogadoHotel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            <state relative-caret-position="-6">
+              <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -67,8 +59,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EntraBd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            <state relative-caret-position="419">
+              <caret line="274" column="5" lean-forward="true" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
+              <folding>
+                <element signature="n#verificaSenha#0;n#!!top" />
+                <element signature="n#verificaEmail#0;n#!!top" />
+                <element signature="n#obtemPrimary#0;n#!!top" />
+                <element signature="n#cadastrarHotel#0;n#!!top" />
+                <element signature="n#cadastrarUser#0;n#!!top" />
+                <element signature="n#cadastraQuarto#0;n#!!top" />
+                <element signature="n#senhaLogin#0;n#!!top" />
+                <element signature="n#login#0;n#!!top" />
+                <element signature="n#geradorSenhaQto#0;n#!!top" />
+                <element signature="n#verificaCheckOut#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,11 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EditaQuarto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="81" column="124" lean-forward="true" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
-              <folding>
-                <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="561">
+              <caret line="81" column="124" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -103,16 +104,7 @@
         <entry file="file://$PROJECT_DIR$/Classe/Sql.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classe/Quarto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -120,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CadastroQuarto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="95" column="52" lean-forward="true" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -137,14 +129,12 @@
         <option value="$PROJECT_DIR$/CadastroHotel.php" />
         <option value="$PROJECT_DIR$/CadastroCli.php" />
         <option value="$PROJECT_DIR$/Classe/User.php" />
-        <option value="$PROJECT_DIR$/testador.php" />
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/Classe/Hotel.php" />
         <option value="$PROJECT_DIR$/TerminaReserva.php" />
         <option value="$PROJECT_DIR$/Reservando.php" />
         <option value="$PROJECT_DIR$/css/classes.css" />
         <option value="$PROJECT_DIR$/CascadingSheets/classes.css" />
-        <option value="$PROJECT_DIR$/CadastroQuarto.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/cascata/classes.css" />
         <option value="$PROJECT_DIR$/pag logada.php" />
@@ -152,7 +142,9 @@
         <option value="$PROJECT_DIR$/Classe/Quarto.php" />
         <option value="$PROJECT_DIR$/EditaQuarto.php" />
         <option value="$PROJECT_DIR$/Classe/Sql.php" />
+        <option value="$PROJECT_DIR$/testador.php" />
         <option value="$PROJECT_DIR$/EntraBd.php" />
+        <option value="$PROJECT_DIR$/CadastroQuarto.php" />
       </list>
     </option>
   </component>
@@ -185,11 +177,6 @@
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="Classe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,18 +267,50 @@
       <workItem from="1570146665297" duration="3922000" />
       <workItem from="1570209835432" duration="605000" />
       <workItem from="1570210457516" duration="1796000" />
-      <workItem from="1570365073763" duration="6314000" />
+      <workItem from="1570365073763" duration="6474000" />
+      <workItem from="1570977029586" duration="1062000" />
+      <workItem from="1571056636400" duration="10296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166104000" />
+    <option name="totallyTimeSpent" value="177622000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26385927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26918977" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32900432" />
+      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -311,7 +330,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -385,7 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testador.php" />
     <entry file="file://$PROJECT_DIR$/Classe/User.php" />
     <entry file="file://$PROJECT_DIR$/Classe/Hotel.php" />
     <entry file="file://$PROJECT_DIR$/TerminaReserva.php" />
@@ -398,28 +416,10 @@
     <entry file="file://$PROJECT_DIR$/img/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pag logada.php">
+    <entry file="file://$PROJECT_DIR$/Classe/Quarto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="110" selection-start-line="51" selection-start-column="110" selection-end-line="51" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="135" column="79" lean-forward="true" selection-start-line="135" selection-start-column="79" selection-end-line="135" selection-end-column="79" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CadastroQuarto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+        <state relative-caret-position="2907">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>
@@ -430,20 +430,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classe/Quarto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EditaQuarto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="81" column="124" lean-forward="true" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="561">
+          <caret line="81" column="124" selection-start-line="81" selection-start-column="124" selection-end-line="81" selection-end-column="124" />
         </state>
       </provider>
     </entry>
@@ -453,21 +443,65 @@
     <entry file="file://$PROJECT_DIR$/Classe/Sql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pag logada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="51" column="110" selection-start-line="51" selection-start-column="110" selection-end-line="51" selection-end-column="110" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LogadoHotel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        <state relative-caret-position="-6">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CadastroQuarto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="95" column="52" lean-forward="true" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EntraBd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        <state relative-caret-position="419">
+          <caret line="274" column="5" lean-forward="true" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
+          <folding>
+            <element signature="n#verificaSenha#0;n#!!top" />
+            <element signature="n#verificaEmail#0;n#!!top" />
+            <element signature="n#obtemPrimary#0;n#!!top" />
+            <element signature="n#cadastrarHotel#0;n#!!top" />
+            <element signature="n#cadastrarUser#0;n#!!top" />
+            <element signature="n#cadastraQuarto#0;n#!!top" />
+            <element signature="n#senhaLogin#0;n#!!top" />
+            <element signature="n#login#0;n#!!top" />
+            <element signature="n#geradorSenhaQto#0;n#!!top" />
+            <element signature="n#verificaCheckOut#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

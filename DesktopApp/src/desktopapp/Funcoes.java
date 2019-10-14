@@ -7,7 +7,7 @@ package desktopapp;
 
     import com.mysql.jdbc.PreparedStatement;
     import java.sql.Connection;
-import java.sql.Date;
+    import java.sql.Date;
     import java.sql.DriverManager;
     import java.sql.ResultSet;
     import java.sql.SQLException;
@@ -68,8 +68,7 @@ public class Funcoes {
         {
             System.err.print("Erro INSERT: "+ex);
         }
-        return retorno;
-            
+        return retorno;  
     }
     
     public ResultSet consulta(String consulta)

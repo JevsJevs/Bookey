@@ -70,6 +70,7 @@ require_once ("config.php");
  $hotel = unserialize($_SESSION["myhotel"]);
 
 if(isset($_SESSION["myhotel"])) {
+
     if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
         try {
@@ -85,13 +86,14 @@ if(isset($_SESSION["myhotel"])) {
             $valDia = $_POST["valdia"]; // formatar o valor para float
             //$codQuarto = obtemPrimary($_SESSION["emailH"],"Hotel");
 
-
             if ((trim($nQuart) == '') || (trim($nomeft) == '') || (trim($valDia) == '')) {
                 echo "Todos os parametros são obrigatórios, refaça o formulário";
             } else if (!preg_match("/^image\/(jpeg|png|gif)$/", $tipoft)) {
                 echo "<span id='error'>Imagem invalida</span>";
             } else if ($tamft > MaxSize) {
                 echo "<span id='error'>Imagem grande demais. Max 2mb</span>";
+            }else if(repeteNumero($nQuart,$hotel->getId())) {
+                echo "Numero já cadastrado, mude-o";
             } else {
 
                 /* if(cadastraQuarto($codQuarto,$nQuart,$imagem,$valDia))

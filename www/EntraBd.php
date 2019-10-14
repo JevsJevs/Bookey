@@ -248,3 +248,31 @@ function verificaCheckOut()
     }
 
 }
+
+function repeteNumero($numero,$hotel)
+{
+    try{
+
+        $retorno = false;
+        $pdo = conectarBD();
+        $stmt = $pdo->query("select nQuarto from Quarto where codHotel = ".$hotel." ;");
+
+        $stmt->execute();
+
+        while( $num = $stmt->fetch())
+        {
+            if($num["nQuarto"] == $numero)
+            {
+                $retorno = true;
+            }
+        }
+
+        return $retorno;
+    }
+    catch (PDOException $e)
+    {
+        echo "erro:".$e->getMessage();
+    }
+
+
+}

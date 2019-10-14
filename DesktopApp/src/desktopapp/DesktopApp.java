@@ -16,6 +16,9 @@ public class DesktopApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        TelaEstatica te = new TelaEstatica();
+        te.setVisible(true);
+        
     }
     
 }
