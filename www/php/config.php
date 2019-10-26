@@ -6,7 +6,7 @@
 
 //autoload das classes armazenadas na pasta "class"
 spl_autoload_register(function($nameClass) {
-    $fileName = "Classe" . DIRECTORY_SEPARATOR . $nameClass . ".php";
+    $fileName =  "..".DIRECTORY_SEPARATOR. "Classe" . DIRECTORY_SEPARATOR . $nameClass . ".php";
 
     if (file_exists($fileName)) {
         require_once($fileName);

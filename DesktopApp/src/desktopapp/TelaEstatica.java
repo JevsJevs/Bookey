@@ -6,6 +6,9 @@
  */
 package desktopapp;
 
+import java.awt.Dimension;
+import javax.swing.JInternalFrame;
+
 /**
  *
  * @author aluno
@@ -19,9 +22,23 @@ public class TelaEstatica extends javax.swing.JFrame {
         initComponents();
         
         Login log = new Login();
-        
+        log.setVisible(true);
         desktop.add(log);
+        
+        if(log == null)
+        {
+            Logado logado = new Logado();
+            desktop.add(logado);
+            logado.setVisible(true);
+        }
+ 
+        
+        
+        /*Logado l = new Logado();
+        l.setVisible(true);
+        desktop.add(l);*/
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -40,22 +57,26 @@ public class TelaEstatica extends javax.swing.JFrame {
         desktop.setLayout(desktopLayout);
         desktopLayout.setHorizontalGroup(
             desktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 390, Short.MAX_VALUE)
         );
         desktopLayout.setVerticalGroup(
             desktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 289, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktop)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktop)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktop)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktop)
+                .addContainerGap())
         );
 
         pack();
@@ -99,4 +120,5 @@ public class TelaEstatica extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane desktop;
     // End of variables declaration//GEN-END:variables
+
 }

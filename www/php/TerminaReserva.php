@@ -1,11 +1,9 @@
 <?php
-require_once ('config.php');
+require_once('config.php');
 
 session_start();
 
 $num = $_GET['numeroQ'];
-
-echo $num;
 
 $da = new Hotel();
 

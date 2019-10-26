@@ -130,7 +130,6 @@ class Hotel
                 ":CODH"=>$this->getId(),
                 ":NQUART"=>$numQuarto
             ));
-        echo "reserva Concluida";
     }
 
 

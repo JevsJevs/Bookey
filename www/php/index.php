@@ -4,16 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Login Bookey</title>
-    <link rel="stylesheet" href="icons/material.css">
-    <link rel="stylesheet" href="cascata/materialize.min.css">
-    <link rel="stylesheet" href="cascata/classes.css">
+    <link rel="stylesheet" href="../icons/material.css">
+    <link rel="stylesheet" href="../cascata/materialize.min.css">
+    <link rel="stylesheet" href="../cascata/classes.css">
 </head>
 <body style="background-color:#B1D4EB"><!-- #78909c -->
 
  <div class="container corFundo">
 
     <h5 class="center-align logo">
-        <img class="retrato" src="img/logo.png">
+        <img class="retrato" src="../img/logo.png">
     </h5>
 
         <div class="row">
@@ -88,8 +88,8 @@
 
  </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/materialize.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
 
     <script type="text/javascript">
         M.AutoInit();
@@ -101,8 +101,8 @@
 
 if($_SERVER["REQUEST_METHOD"] === 'POST')
 {
-    include ("EntraBd.php");
-    require_once ("config.php");
+    include("EntraBd.php");
+    require_once("config.php");
 
         switch ($_POST["action"])
         {

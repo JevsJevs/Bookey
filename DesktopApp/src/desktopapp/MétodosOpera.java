@@ -6,6 +6,11 @@
 package desktopapp;
 
 import com.mysql.jdbc.PreparedStatement;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
@@ -14,8 +19,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -40,24 +48,46 @@ public class MétodosOpera {
         return retorno;
     }
     
+    public int numeroHotel(String email)
+    {
+        int retorno = -1;
+        try {
+            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT codHotel FROM `Hotel` WHERE email="+email+";");
+            ResultSet rs = stmt.executeQuery();
+            
+            rs.next();
+            
+            retorno =  rs.getInt("codHotel");
+
+        } catch (SQLException ex) {
+            Logger.getLogger(MétodosOpera.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return retorno;
+    }
+    
     public void PoeTabela(DefaultTableModel modelo,JTable estrutura,Integer codHotel)
     {
         int linha = 0;
         modelo.setRowCount(0);
+        System.out.println("SELECT * FROM Quarto WHERE codHotel=23");
+                
         try{
-            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT * FROM `Quarto` WHERE codHotel="+codHotel+";");
-
+            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT * FROM Quarto WHERE codHotel=23");
             ResultSet resultado = stmt.executeQuery();
+            
+            if (resultado.next())
+                System.out.println("SELECT * FROM Quarto WHERE codHotel=23");
 
             while(resultado.next())
             {
                 modelo.addRow(new String[estrutura.getColumnCount()]);
-                estrutura.setValueAt(resultado.getString("IdUser"),linha,0);
-                estrutura.setValueAt(resultado.getInt("Numero Quarto"),linha,1);
-                estrutura.setValueAt(resultado.getInt("Check In"),linha,2);
-                estrutura.setValueAt(resultado.getInt("Check Out"),linha,3);
-                estrutura.setValueAt(resultado.getInt("Diária"),linha,4);
-                estrutura.setValueAt(resultado.getInt("Cobrança total"),linha,5);
+                
+                estrutura.setValueAt(resultado.getInt("codUser"),linha,0);
+                estrutura.setValueAt(resultado.getInt("nQuarto"),linha,1);
+                estrutura.setValueAt(resultado.getDate("checkIn"),linha,2);
+                estrutura.setValueAt(resultado.getDate("checkOut"),linha,3);
+                estrutura.setValueAt(resultado.getFloat("valDiaria"),linha,4);
+                estrutura.setValueAt(resultado.getFloat("valTot"),linha,5);
                 linha++;
             }
             
@@ -71,26 +101,27 @@ public class MétodosOpera {
     public boolean senhacorr(String senha,String email)
     {
         boolean retorno = false;
-        
+
         try {            
-            byte[] valores = senha.getBytes();
             MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(valores);
-            byte[] hashMd5 = md.digest();
-        
-            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT senha FROM Hotel WHERE email="+email+" ;");
+
+            BigInteger hash = new BigInteger(1, md.digest(senha.getBytes()));
+            System.out.println("Senha digitada: "+hash.toString(16)+"\n");
+            String cryptS = hash.toString(16);
+            
+            
+            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT senha FROM Hotel WHERE email='"+email+"' ;");
             ResultSet rs = stmt.executeQuery();
             String verfSenha = "";
+                        
             if(rs.next())
             {
                 verfSenha = rs.getString("senha");
             }
             
-            String cryptS = new String(hashMd5);
-            
             if(verfSenha.equals(cryptS))
             {
-                retorno = true;
+                retorno = true;      
             }
       
         } catch (SQLException ex) {
@@ -98,8 +129,26 @@ public class MétodosOpera {
         } catch (NoSuchAlgorithmException ex) {
             Logger.getLogger(MétodosOpera.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        System.out.println(retorno);
         return retorno;
+    }
+    
+    public void carregaImg(JButton but,String arq)
+    {
+        try{
+            /*Image img = ImageIO.read(getClass().getResource(arq));
+            System.out.println("entrou: "+arq);
+            but.setIcon(new ImageIcon(img));*/
+            File f;
+            f = new File(arq);
+            BufferedImage bf = ImageIO.read(f);
+            ImageIcon icon = new ImageIcon(bf);
+            but.setIcon(icon);
+        }catch(Exception e)
+        {
+            System.err.print(e);
+        }
+        
     }
     
     public void apagarQuarto(Integer numeroQto,Integer nHotel)
@@ -133,11 +182,21 @@ public class MétodosOpera {
            
     }
     
-    public void novoQuarto(Integer Valdia) //imagem
+    public void novoQuarto(Integer Valdia,JButton botao, Integer num) //imagem
     {
-        if((Valdia==null) || (Valdia==0))
-        {
+           try {
+            // TODO add your handling code here:
             
+            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("INSERT INTO Quarto (nQuarto, valDiaria, Img) VALUES (?,?,?)"); // falta imagem
+            stmt.setInt(1,num);
+            stmt.setFloat(2,Valdia);
+            
+            //imagem
+            
+            stmt.execute();
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(Logado.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -158,5 +217,6 @@ public class MétodosOpera {
         } catch (SQLException ex) {
             Logger.getLogger(MétodosOpera.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return false;
     }
 }

@@ -1,24 +1,22 @@
 <?php
 session_start();
-include ("EntraBd.php");
-require_once ("config.php");
+include("EntraBd.php");
+require_once("config.php");
 
 if(isset($_SESSION["logUser"]))
 {
     $pdo = conectarBD();
-    //$hotel = $_POST["hotel"];
 
     echo "
-    
         <html>
         <head>
             <title>Logado</title>
             <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
             <meta charset=\"utf-8\">
         
-            <link rel=\"stylesheet\" href=\"icons/material.css\">
-            <link rel=\"stylesheet\" href=\"cascata/materialize.min.css\">
-            <link rel=\"stylesheet\" href=\"cascata/classes.css\">
+            <link rel=\"stylesheet\" href=\"../icons/material.css\">
+            <link rel=\"stylesheet\" href=\"../cascata/materialize.min.css\">
+            <link rel=\"stylesheet\" href=\"../cascata/classes.css\">
         </head>
         <body>
         
@@ -40,43 +38,42 @@ if(isset($_SESSION["logUser"]))
                     <li class=\"tab col s6\"> <a href=\"#busca\" class=\"black-text waves-effect waves-dark\">Buscar Hotéís</a> </li>
                     <li class=\"tab col s6\"> <a href=\"#reserva\" class=\"black-text waves-effect waves-dark\">Reservas Ativas</a> </li>
                 </ul>
-            </div>
+            </div>  
             
         </div>
+        
         
         <div class=\"section\" id=\"busca\">
         
         <div class=\"carousel carousel-slider\">
         
-            <a class=\"carousel-item\" href=\"#one!\"><img class='imgCarro' src=\"img/images.jpg \"></a>
-            <a class=\"carousel-item\" href=\"#two!\"><img class='imgCarro' src=\"img/images%20(2).jpg \"></a>
-            <a class=\"carousel-item\" href=\"#three!\"><img class='imgCarro' src=\"img/images%20(1).jpg \"></a>
-            <a class=\"carousel-item\" href=\"#four!\"><img class='imgCarro' src=\"https://lorempixel.com/250/250/nature/4\"></a>
-            <a class=\"carousel-item\" href=\"#five!\"><img class='imgCarro' src=\"https://lorempixel.com/250/250/nature/5\"></a>
-        
         ";
 
-        /*$pdo = conectarBD();
+    try{
+        $pdo = conectarBD();
 
+        $stmt = $pdo->prepare("SELECT Img FROM Quarto ORDER BY RAND()");
 
-        $stmt= $pdo->prepare("select Img from Quarto ORDER BY RAND()");
         $stmt->execute();
+        $contador=0;
 
-        for($row = 0; $row<4;$row++)
+        while($contador<3)
         {
-            $obj = $stmt->fetch();
-            echo "<a class=\"carousel-item\" href=\"#\"><img class='imgCarro' src='data:image;base64,".base64_encode($obj["Img"])."'>";
-        }*/
+            $linha = $stmt->fetch();
+            echo "<a class=\"carousel-item\"><img class='imgCarro' src='data:image;base64," . base64_encode($linha[Img]) . "'></a> ";
+            $contador++;
+        }
+        echo "</div>";
+    }catch (PDOException $e)
+    {
+        echo $e->getMessage();
+    }
 
-        echo "
-            </div>
-        
-        
-        
-            <div><h2>Hoteis recomendados</h2></div>
-            
-            
-            
+
+
+    echo "     
+        <div><h2>Hoteis recomendados</h2></div>
+     
     ";
 
     try{
@@ -95,8 +92,8 @@ if(isset($_SESSION["logUser"]))
 		            <div class=\"card-content white-text\">
 		              <div class=\"row\">
 		                  <span class=\"card-title\">$row[nome]</span>
-		                  <a href='Reservando.php?codHotel=$row[idHotel]'> Reservar</a>
-		                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+		                  <a href='FazReserva.php?codHotel=$row[idHotel]'> Reservar</a>
+		                  <p class='truncate'>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
 		                </div>
 		            </div>
 		          </div>
@@ -109,12 +106,9 @@ if(isset($_SESSION["logUser"]))
         echo "
 
         </div>
-        
-        ";
-
-        echo"
 
             <div class=\"section\" id=\"reserva\">
+            
             ";
 
         try{
@@ -132,14 +126,15 @@ if(isset($_SESSION["logUser"]))
             {
 
               $informacoes = $roww[$i];
-              echo"  <div class=\"row\">
+              echo"  
+                <div class=\"row\">
                     <div class=\"col s12 m12 l12 xl12\">
                         <div class=\"card blue-grey darken-1\">
                             <div class=\"card-content white-text\">
                                 <div class=\"row\">
                                     <span class=\"card-title\">Quarto :$informacoes[nQuarto]</span>
                                     <a hidden>$informacoes[codHotel] </a>
-                                    <img class=\"imgListag col s4 m4 g4\" src=\"img\logo.png\">
+                                    <img class='retrato col s3' src='data:image;base64,".base64_encode($informacoes["Img"])."'>
                                     <p>I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -158,11 +153,13 @@ if(isset($_SESSION["logUser"]))
             </div>
 
 
-             <script src=\"js/jquery.min.js\"></script>
-            <script src=\"js/materialize.js\"></script>
+             <script src=\"../js/jquery.min.js\"></script>
+            <script src=\"../js/materialize.js\"></script>
+            
             <script type=\"text/javascript\">
                 M.AutoInit();
             </script>
+            
             </body>
             </html>        
         ";

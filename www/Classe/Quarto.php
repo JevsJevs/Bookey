@@ -103,7 +103,6 @@ class Quarto
                 ":imagem"=>$this->getImagem(),
                 ":valDia"=>$this->getValDia()
             ));
-        echo "Quarto Cadastrado";
     }
 
     public function loadByHotelNum($emailHotel,$numero)
@@ -184,7 +183,6 @@ class Quarto
                     ":CODH"=>$this->getIdHotel(),
                     ":NQUART"=>$this->getNumQuarto()
                 ));
-        echo "reserva Concluida";
     }
 
     public function AttValorImg($Img,$valD)
@@ -199,6 +197,5 @@ class Quarto
                 ":CODH"=>$this->getIdHotel(),
                 ":NQUART"=>$this->getNumQuarto()
             ));
-        echo "Atualização Concluida";
     }
 }

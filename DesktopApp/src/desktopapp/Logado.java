@@ -5,6 +5,8 @@
  */
 package desktopapp;
 
+import java.awt.FileDialog;
+import java.awt.Frame;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,17 +19,20 @@ public class Logado extends javax.swing.JInternalFrame {
      * Creates new form Logado
      */
     
-    MétodosOpera oper;
+    MétodosOpera mo = new MétodosOpera();
     
     DefaultTableModel model;
     Connection con;
     JDesktopPane desktop = new JDesktopPane();
+    
     public Logado() {
         initComponents();
+        
+        mo.conecta("143.106.241.3","cl17126","cl17126","cl*13022002");
                
         model = (DefaultTableModel) tblTabela.getModel();
         
-        model.setColumnCount(4);
+        model.setColumnCount(6);
         model.setRowCount(0);
         tblTabela.getColumnModel().getColumn(0).setHeaderValue("IdUser");
         tblTabela.getColumnModel().getColumn(1).setHeaderValue("Numero Quarto");
@@ -36,7 +41,7 @@ public class Logado extends javax.swing.JInternalFrame {
         tblTabela.getColumnModel().getColumn(4).setHeaderValue("Diária");
         tblTabela.getColumnModel().getColumn(5).setHeaderValue("Cobrança total");
         
-        oper.PoeTabela(model,tblTabela,23); //falta codigo hotel
+        mo.PoeTabela(model,tblTabela,23); //falta codigo hotel
 
     }
 
@@ -50,12 +55,11 @@ public class Logado extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jScrollBar1 = new javax.swing.JScrollBar();
-        myFileChooser = new javax.swing.JFileChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblTabela = new javax.swing.JTable();
         txtNumero = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnImg = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtValdia = new javax.swing.JTextField();
         txtValtot = new javax.swing.JTextField();
@@ -92,10 +96,14 @@ public class Logado extends javax.swing.JInternalFrame {
 
         jLabel1.setText("Numero");
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnImg.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnImgMouseClicked(evt);
+            }
+        });
+        btnImg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnImgActionPerformed(evt);
             }
         });
 
@@ -188,16 +196,17 @@ public class Logado extends javax.swing.JInternalFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnImg, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 3, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1))
@@ -231,11 +240,10 @@ public class Logado extends javax.swing.JInternalFrame {
                             .addComponent(btnApagar)
                             .addComponent(btnSubmit))
                         .addGap(26, 26, 26))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnImg, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
@@ -244,9 +252,9 @@ public class Logado extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImgActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnImgActionPerformed
 
     private void tblTabelaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblTabelaMouseClicked
         // TODO add your handling code here:
@@ -257,8 +265,8 @@ public class Logado extends javax.swing.JInternalFrame {
         
         txtNumero.setText(model.getValueAt(row,1).toString());
         txtUser.setText(model.getValueAt(row,0).toString());
-        txtCin.setText(model.getValueAt(row,2).toString());
-        txtCout.setText(model.getValueAt(row,3).toString());
+        //txtCin.setText(model.getValueAt(row,2).toString());
+        //txtCout.setText(model.getValueAt(row,3).toString());
         txtValdia.setText(model.getValueAt(row,4).toString());
         txtValtot.setText(model.getValueAt(row,5).toString());
         
@@ -267,6 +275,8 @@ public class Logado extends javax.swing.JInternalFrame {
         txtCin.setEnabled(false);
         txtCout.setEnabled(false);
         txtValtot.setEnabled(false);
+        
+        // bloquear imagem
     }//GEN-LAST:event_tblTabelaMouseClicked
 
     private void btnNovoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNovoMouseClicked
@@ -277,6 +287,10 @@ public class Logado extends javax.swing.JInternalFrame {
         txtCin.setEnabled(false);
         txtCout.setEnabled(false);
         txtUser.setEnabled(false);
+        
+        //botoes
+        btnEditar.setEnabled(false);
+        btnApagar.setEnabled(false);
         
         txtNumero.setText("");
         txtUser.setText("");
@@ -295,16 +309,17 @@ public class Logado extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnApagarMouseClicked
 
     private void btnSubmitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSubmitMouseClicked
-        try {
-            // TODO add your handling code here:
-            
-            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("INSERT INTO Quarto (nQuarto, valDiaria) "
-                    + "values ("+txtNumero.getText()+","+txtValdia.getText()+") "); // falta imagem
-            stmt.execute();
-            
-        } catch (SQLException ex) {
-            Logger.getLogger(Logado.class.getName()).log(Level.SEVERE, null, ex);
+        
+        if((txtNumero.getText().equals("")) || (txtValdia.getText().equals(""))  || (btnImg.getIcon()==null))
+        {
+            //display de aviso
         }
+        else
+        {
+            
+        }
+        
+        
         
     }//GEN-LAST:event_btnSubmitMouseClicked
 
@@ -322,13 +337,20 @@ public class Logado extends javax.swing.JInternalFrame {
         
     }//GEN-LAST:event_btnEditarMouseClicked
 
+    private void btnImgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnImgMouseClicked
+        // TODO add your handling code here:
+        FileDialog fd = new FileDialog((Frame) null);
+        fd.setVisible(true);
+        System.out.println(fd.getDirectory()+fd.getFile());
+        mo.carregaImg(btnImg,fd.getDirectory()+fd.getFile());       
+    }//GEN-LAST:event_btnImgMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApagar;
     private javax.swing.JButton btnEditar;
+    private javax.swing.JButton btnImg;
     private javax.swing.JButton btnNovo;
     private javax.swing.JButton btnSubmit;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -338,7 +360,6 @@ public class Logado extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JFileChooser myFileChooser;
     private javax.swing.JTable tblTabela;
     private javax.swing.JFormattedTextField txtCin;
     private javax.swing.JFormattedTextField txtCout;

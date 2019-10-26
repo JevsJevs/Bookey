@@ -36,14 +36,14 @@ public class Login extends javax.swing.JInternalFrame {
         txtPassword = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
+        txtEmail.setText("marcos@marcos.com");
+
         jButton1.setText("Entrar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
             }
         });
-
-        txtPassword.setText("jPasswordField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,7 +61,7 @@ public class Login extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -74,7 +74,7 @@ public class Login extends javax.swing.JInternalFrame {
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
 
         pack();
@@ -83,13 +83,24 @@ public class Login extends javax.swing.JInternalFrame {
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
         
-        if((txtEmail.getText()=="")||(txtPassword.getText()==""))
+        if( (txtEmail.getText().equals(""))||(txtPassword.getText().equals("")) )
         {
             System.out.println("Os dois campos sao obrigatórios");
+            System.out.println(txtPassword.getText());
         }
         else if(mt.senhacorr(txtPassword.getText(),txtEmail.getText()))
         {
-            // abrir o outro Jframe
+            Logado loged = new Logado();
+            getParent().add(loged);
+            loged.setVisible(true);
+            
+            this.dispose();
+            
+            /*TelaEstatica te = new TelaEstatica();
+            
+            Logado loged = new Logado();
+            te.desktop.add(loged);*/
+            
         }       
     }//GEN-LAST:event_jButton1MouseClicked
 
