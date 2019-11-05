@@ -12,6 +12,7 @@ import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -177,7 +178,7 @@ public class MetodosOpera {
             BigInteger hash = new BigInteger(1, md.digest(senha.getBytes()));
             System.out.println("Senha digitada: "+hash.toString(16)+"\n");
             String cryptS = hash.toString(16);
-            
+            // com amor Jevs <3
             
             PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT senha FROM Hotel WHERE email='"+email+"' ;");
             ResultSet rs = stmt.executeQuery();
@@ -234,7 +235,7 @@ public class MetodosOpera {
         
     }
     
-    public void editarQuarto(Float valdia,int hotel, int qto,JButton but) // implementar imgagem
+    public void editarQuarto(Float valdia,int hotel, int qto,String caminho) // implementar imgagem
     {
         
 
@@ -262,24 +263,36 @@ public class MetodosOpera {
                 
                 //File nf = File.createTempFile("imgTemp.png",null);
 
-                File nf = new File("imgTemp.png");
-                nf.createNewFile();
-                BufferedImage bi;
-                bi = this.IconBuf(but);
+                //File nf = new File("imgTemp.png");
+                //nf.createNewFile();
+                //BufferedImage bi;
+                //bi = this.IconBuf(but);
                 
                 /* Graphics2D bImageGraphics = bi.createGraphics();
                 
                 RenderedImage rImage = (RenderedImage) bi ;*/
 
-                if(ImageIO.write(bi, "png", nf))
+                /*if(ImageIO.write(bi, "png", nf))
                 {
                     System.out.println("Sucesso para gravar imagem");
                 }
                 
                 FileInputStream entra;
                 entra = new FileInputStream(nf);
+                */
                 
-                stmt.setBinaryStream(2,entra,(int) nf.length());
+                /*ByteArrayOutputStream out = new ByteArrayOutputStream();
+                ImageIO.write(bi,"png",out);
+                byte[] ba = out.toByteArray();
+                ByteArrayInputStream envio = new ByteArrayInputStream(ba);
+                out.flush();*/
+                
+                File f = new File(caminho);
+                                
+                FileInputStream entra;
+                entra = new FileInputStream(f);
+                
+                stmt.setBinaryStream(2,entra,(int) f.length());
                 
                 // A imagem nao esta sendo enviada - arquivo vazio;
                 
@@ -324,13 +337,13 @@ public class MetodosOpera {
         BufferedImage retorno;
         
         Icon icon = bt.getIcon();
-        
+        System.out.println(icon.getIconWidth()+" - "+icon.getIconHeight());
         retorno = new BufferedImage(icon.getIconWidth(),icon.getIconHeight(),BufferedImage.TYPE_INT_RGB);
         
         return retorno;
     }
     
-    public void cadastraQuarto(String num, String valdiaria, JButton but,int codhotel) //agregar o codHotel 
+    public void cadastraQuarto(String num, String valdiaria,String caminho,int codhotel) //agregar o codHotel 
     {
         try {
                 java.sql.PreparedStatement stmt;
@@ -356,26 +369,28 @@ public class MetodosOpera {
                 */
                                 
 
-                //File nf = File.createTempFile("imgTemp.png",null);
+                /*File nf = File.createTempFile("imgTemp.png",null);
 
-                File nf = new File("imgTemp.png");
+                File nf = new File(caminho);
                 nf.createNewFile();
                 BufferedImage bi;
                 bi = this.IconBuf(but);
+                System.out.println(bi);
+                Graphics2D bImageGraphics = bi.createGraphics();
                 
-               /* Graphics2D bImageGraphics = bi.createGraphics();
-                
-                RenderedImage rImage = (RenderedImage) bi ;*/
+                RenderedImage rImage = (RenderedImage) bi ;
 
                 if(ImageIO.write(bi, "png", nf))
                 {
                     System.out.println("Sucesso para gravar imagem");
-                }
+                }*/
                 
+                File f = new File(caminho);
+                                
                 FileInputStream entra;
-                entra = new FileInputStream(nf);
+                entra = new FileInputStream(f);
                 
-                stmt.setBinaryStream(4,entra,(int) nf.length());
+                stmt.setBinaryStream(4,entra,(int) f.length());
                 
                 // A imagem nao esta sendo enviada - arquivo vazio;
                 

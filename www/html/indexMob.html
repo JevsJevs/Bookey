@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Login Bookey</title>
+    <link rel="stylesheet" href="../icons/material.css">
+    <link rel="stylesheet" href="../cascata/materialize.min.css">
+    <link rel="stylesheet" href="../cascata/classes.css">
+</head>
+<body style="background-color:#0d47a1"><!-- #78909c -->
+
+<div class="container indxMob col s12 m12">
+
+    <h5 class="center-align logo">
+        <img class="retrato" src="../img/logo.png">
+    </h5>
+
+    <div class="row">
+        <ul class="tabs blue darken-4">
+            <li class="tab col s6 white-text"><a href="#User"><p class="fonteBranca">Usuário</p></a></li>
+            <li class="tab col s6 white-text"><a href="#Hotel"><p class="fonteBranca">Hotel</p></a></li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+
+        <div id="User">
+            <form name="user" method="post" action="../php/formLogin.php">
+                <div class="row">
+                    <div class="col s8 offset-s2">
+                        <span class="fonteBranca">Login: <input class="fonteBranca" type="email" name="user" placeholder="Email"></span>
+
+                        <span class="fonteBranca">Senha: <input class="fonteBranca" type="password" name="senha"></span>
+                        <input type="hidden" name="action" value="user">
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="center-align tamFonte">
+                        <input type="submit" value="EntrarUser">
+                    </p>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <p class="centro tamFonte fonteBranca" >Não está cadastrado ainda?<br>     Cadastre-se já!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <p class="center-align tamFonte fonteBranca"><input type="button" onclick="location.href='../html/CadCli.html'" value="Cadastre-se"></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Hotel">
+            <form name="hotel" method="post" action="../php/formLogin.php">
+                <div class="row">
+                    <div class="col s8 offset-s2">
+                        <span class="fonteBranca">Login: <input class="fonteBranca" type="email" name="user" placeholder="Email"></span>
+
+                        <span class="fonteBranca">Senha: <input class="fonteBranca" type="password" name="senha"></span>
+                        <input type="hidden" name="action" value="hotel">
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="center-align tamFonte">
+                        <input type="submit" value="EntrarHotel">
+                    </p>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <p class="centro tamFonte fonteBranca" >Não está cadastrado ainda?<br>     Cadastre-se já!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <p class="center-align tamFonte  fonteBranca"><input type="button" onclick="location.href='../html/CadHotel.html'" value="Cadastre-se"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/materialize.min.js"></script>
+
+<script type="text/javascript">
+    M.AutoInit();
+</script>
+</body>
+</html>

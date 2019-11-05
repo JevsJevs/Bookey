@@ -48,7 +48,18 @@ switch ($_POST["action"])
                     header("location:LogadoHotel.php");
                 }
                 else
-                    echo "<span style='color: red'>Senha Incorreta</span>";
+                    echo "
+                        <link rel=\"stylesheet\" href=\"../icons/material.css\">
+                        <link rel=\"stylesheet\" href=\"../cascata/materialize.min.css\">
+                        <link rel=\"stylesheet\" href=\"../cascata/classes.css\">
+                        <body style='background-color: #B1D4EB'>
+                            <div class='row'>
+                                <div class='col s3 offset-s5' style='background-color: #0D47A1; margin-top: 300px; height: 100px;'>
+                                    <span style='color: red'>Senha Incorreta</span>
+                                </div>
+                            </div>                      
+                        </body>
+                    ";
             }
             catch (PDOException $e)
             {

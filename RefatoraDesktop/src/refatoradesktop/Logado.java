@@ -63,6 +63,8 @@ public class Logado extends javax.swing.JFrame {
         btnApagar.setEnabled(true);
         btnSubmit.setVisible(false);
         btnFimRes.setVisible(false);
+        btnConfirma.setVisible(false);
+        btnCancelar.setVisible(false);
         
     }
 
@@ -98,6 +100,9 @@ public class Logado extends javax.swing.JFrame {
         txtCin = new javax.swing.JTextField();
         txtCout = new javax.swing.JTextField();
         btnFimRes = new javax.swing.JButton();
+        lblCaminho = new javax.swing.JLabel();
+        btnConfirma = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -180,6 +185,20 @@ public class Logado extends javax.swing.JFrame {
             }
         });
 
+        btnConfirma.setText("Confirmar Alterações");
+        btnConfirma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnConfirmaMouseClicked(evt);
+            }
+        });
+
+        btnCancelar.setText("Cancelar");
+        btnCancelar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCancelarMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -208,23 +227,20 @@ public class Logado extends javax.swing.JFrame {
                                         .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(51, 51, 51)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(txtCin, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel6)
-                                                .addGap(46, 46, 46)))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel7)
-                                            .addComponent(txtCout, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(btnFimRes, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(178, 178, 178)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblCod))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                    .addComponent(txtCin, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(18, 18, 18))
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addComponent(jLabel6)
+                                                    .addGap(46, 46, 46)))
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jLabel7)
+                                                .addComponent(txtCout, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(btnFimRes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnNovo, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -234,13 +250,24 @@ public class Logado extends javax.swing.JFrame {
                                 .addGap(41, 41, 41)
                                 .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(btnImg, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnImg, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 605, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27))))
+                        .addGap(27, 27, 27))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(178, 178, 178)
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblCod)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnConfirma, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblCaminho, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -277,13 +304,21 @@ public class Logado extends javax.swing.JFrame {
                                 .addComponent(btnNovo)
                                 .addComponent(btnEditar))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel8)
-                            .addComponent(lblCod))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnImg, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel8)
+                                    .addComponent(lblCod)
+                                    .addComponent(btnConfirma)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblCaminho)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnImg, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCancelar))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28))
@@ -354,6 +389,8 @@ public class Logado extends javax.swing.JFrame {
         btnEditar.setEnabled(false);
         btnApagar.setEnabled(false);
         btnSubmit.setVisible(true);
+        btnFimRes.setVisible(false);
+        btnConfirma.setVisible(false);
         
         txtNumero.setText("");
         txtUser.setText("");
@@ -363,6 +400,7 @@ public class Logado extends javax.swing.JFrame {
         txtValtot.setText("");
         
         btnImg.setIcon(null);
+        lblCaminho.setText("");
         
     }//GEN-LAST:event_btnNovoMouseClicked
 
@@ -378,7 +416,8 @@ public class Logado extends javax.swing.JFrame {
                 JOptionPane.showConfirmDialog(null,"Já existe um quarto com o número digitado","Número Repetido",JOptionPane.DEFAULT_OPTION);
             }
             else{
-                mo.cadastraQuarto(txtNumero.getText(), txtValdia.getText() , btnImg,Integer.parseInt(lblCod.getText()) );
+                mo.cadastraQuarto(txtNumero.getText(), txtValdia.getText() , lblCaminho.getText(),Integer.parseInt(lblCod.getText()) );
+                System.out.println(lblCaminho.getText());
                 mo.PoeTabela(model,tblTabela,Integer.parseInt(lblCod.getText()));
 
                 btnSubmit.setVisible(false);
@@ -395,7 +434,8 @@ public class Logado extends javax.swing.JFrame {
         
         FileDialog fd = new FileDialog((Frame) null);
         fd.setVisible(true);
-        System.out.println(fd.getDirectory()+fd.getFile());
+        System.out.println(fd.getDirectory()+fd.getFile()); // aqui esta o caminho
+        lblCaminho.setText(fd.getDirectory()+fd.getFile());
         mo.carregaImg(btnImg,fd.getDirectory()+fd.getFile());
     }//GEN-LAST:event_btnImgMouseClicked
 
@@ -413,15 +453,20 @@ public class Logado extends javax.swing.JFrame {
     }//GEN-LAST:event_btnApagarMouseClicked
 
     private void btnEditarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditarMouseClicked
-        // TODO add your handling code here:
-        if((txtValdia.getText().equals("") ) || (txtValdia.getText() == null) || (btnImg.getIcon()==null))
-            System.err.print("Calma lá, preencha todos os campos");
-        else
-            mo.editarQuarto(Float.parseFloat(txtValdia.getText()), Integer.parseInt(lblCod.getText()), Integer.parseInt(txtNumero.getText()), btnImg);
-             mo.PoeTabela(model,tblTabela,Integer.parseInt(lblCod.getText()));
-            
-            btnApagar.setEnabled(false);
-            btnEditar.setEnabled(false);
+        // TODO add your handling code here:  
+        txtNumero.setEnabled(false);
+        
+        txtCin.setEnabled(false);
+        txtCout.setEnabled(false);
+        txtUser.setEnabled(false);
+        
+        //botoes
+        btnApagar.setEnabled(false);
+        btnConfirma.setVisible(true);
+        btnCancelar.setVisible(true);
+        
+        btnImg.setIcon(null);
+        lblCaminho.setText("");
     }//GEN-LAST:event_btnEditarMouseClicked
 
     private void btnFimResMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFimResMouseClicked
@@ -432,6 +477,48 @@ public class Logado extends javax.swing.JFrame {
         
         mo.PoeTabela(model,tblTabela,Integer.parseInt(lblCod.getText()));
     }//GEN-LAST:event_btnFimResMouseClicked
+
+    private void btnConfirmaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConfirmaMouseClicked
+        // TODO add your handling code here:
+        if((txtValdia.getText().equals("") ) || (txtValdia.getText() == null) || (btnImg.getIcon()==null))
+            System.err.print("Calma lá, preencha todos os campos");
+        else
+            mo.editarQuarto(Float.parseFloat(txtValdia.getText()), Integer.parseInt(lblCod.getText()), Integer.parseInt(txtNumero.getText()), lblCaminho.getText());
+             mo.PoeTabela(model,tblTabela,Integer.parseInt(lblCod.getText()));
+            
+            btnApagar.setEnabled(false);
+            btnEditar.setEnabled(false);
+            btnImg.setIcon(null);
+            btnConfirma.setVisible(false);
+            btnCancelar.setVisible(false);
+            lblCaminho.setText("");
+    }//GEN-LAST:event_btnConfirmaMouseClicked
+
+    private void btnCancelarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarMouseClicked
+        // TODO add your handling code here:
+        txtNumero.setEnabled(true);
+        
+        txtCin.setEnabled(false);
+        txtCout.setEnabled(false);
+        txtUser.setEnabled(false);
+        
+        //botoes
+        btnEditar.setEnabled(false);
+        btnApagar.setEnabled(false);
+        btnConfirma.setVisible(false);
+        btnCancelar.setVisible(false);
+        
+        txtNumero.setText("");
+        txtUser.setText("");
+        txtCin.setText("");
+        txtCout.setText("");
+        txtValdia.setText("");
+        txtValtot.setText("");
+        
+        btnImg.setIcon(null);
+        lblCaminho.setText("");
+        
+    }//GEN-LAST:event_btnCancelarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -470,6 +557,8 @@ public class Logado extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnApagar;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnConfirma;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnFimRes;
     private javax.swing.JButton btnImg;
@@ -484,6 +573,7 @@ public class Logado extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblCaminho;
     private javax.swing.JLabel lblCod;
     private javax.swing.JTable tblTabela;
     private javax.swing.JTextField txtCin;
