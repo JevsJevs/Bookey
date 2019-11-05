@@ -40,7 +40,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author aluno
+ * @author João Eduardo Vasconcellos da Silva
  */
 public class MetodosOpera {
     Connection con;
@@ -206,9 +206,6 @@ public class MetodosOpera {
     public void carregaImg(JButton but,String arq)
     {
         try{
-            /*Image img = ImageIO.read(getClass().getResource(arq));
-            System.out.println("entrou: "+arq);
-            but.setIcon(new ImageIcon(img));*/
             File f;
             f = new File(arq);
             BufferedImage bf = ImageIO.read(f);
@@ -244,64 +241,16 @@ public class MetodosOpera {
                 stmt = (java.sql.PreparedStatement) this.con.prepareStatement("UPDATE Quarto SET valDiaria=?,Img=? WHERE codHotel=? AND nQuarto=? ;");
                 stmt.setFloat(1,valdia);
                 
-                /*
-                ---------------------------------------------------------
-                BufferedImage buffered= this.IconBuf(but);
-                
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                ImageIO.write(buffered, "png", baos );
-                byte[] imageInByte = baos.toByteArray();
-
-                Blob blob = con.createBlob();
-                blob.setBytes(4, imageInByte);
-                
-                
-                
-                ---------------------------------------------------------
-                */
-                
-                
-                //File nf = File.createTempFile("imgTemp.png",null);
-
-                //File nf = new File("imgTemp.png");
-                //nf.createNewFile();
-                //BufferedImage bi;
-                //bi = this.IconBuf(but);
-                
-                /* Graphics2D bImageGraphics = bi.createGraphics();
-                
-                RenderedImage rImage = (RenderedImage) bi ;*/
-
-                /*if(ImageIO.write(bi, "png", nf))
-                {
-                    System.out.println("Sucesso para gravar imagem");
-                }
-                
-                FileInputStream entra;
-                entra = new FileInputStream(nf);
-                */
-                
-                /*ByteArrayOutputStream out = new ByteArrayOutputStream();
-                ImageIO.write(bi,"png",out);
-                byte[] ba = out.toByteArray();
-                ByteArrayInputStream envio = new ByteArrayInputStream(ba);
-                out.flush();*/
-                
                 File f = new File(caminho);
                                 
                 FileInputStream entra;
                 entra = new FileInputStream(f);
                 
                 stmt.setBinaryStream(2,entra,(int) f.length());
-                
-                // A imagem nao esta sendo enviada - arquivo vazio;
-                
-                // ---------------------------------------------------------
-                
+                                
                 stmt.setInt(3,hotel);
                 stmt.setInt(4,qto);
-                
-                
+
                 stmt.execute();
                 stmt.close();
             } catch (SQLException ex) {
@@ -331,18 +280,7 @@ public class MetodosOpera {
         }
         return false;
     }
-    
-    public BufferedImage IconBuf(JButton bt)
-    {
-        BufferedImage retorno;
-        
-        Icon icon = bt.getIcon();
-        System.out.println(icon.getIconWidth()+" - "+icon.getIconHeight());
-        retorno = new BufferedImage(icon.getIconWidth(),icon.getIconHeight(),BufferedImage.TYPE_INT_RGB);
-        
-        return retorno;
-    }
-    
+
     public void cadastraQuarto(String num, String valdiaria,String caminho,int codhotel) //agregar o codHotel 
     {
         try {
@@ -352,39 +290,6 @@ public class MetodosOpera {
                 stmt.setInt(2,Integer.parseInt( num ) );
                 stmt.setFloat(3, Float.parseFloat( valdiaria) );
                 
-                /*
-                ---------------------------------------------------------
-                BufferedImage buffered= this.IconBuf(but);
-                
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                ImageIO.write(buffered, "png", baos );
-                byte[] imageInByte = baos.toByteArray();
-
-                Blob blob = con.createBlob();
-                blob.setBytes(4, imageInByte);
-                
-                
-                
-                ---------------------------------------------------------
-                */
-                                
-
-                /*File nf = File.createTempFile("imgTemp.png",null);
-
-                File nf = new File(caminho);
-                nf.createNewFile();
-                BufferedImage bi;
-                bi = this.IconBuf(but);
-                System.out.println(bi);
-                Graphics2D bImageGraphics = bi.createGraphics();
-                
-                RenderedImage rImage = (RenderedImage) bi ;
-
-                if(ImageIO.write(bi, "png", nf))
-                {
-                    System.out.println("Sucesso para gravar imagem");
-                }*/
-                
                 File f = new File(caminho);
                                 
                 FileInputStream entra;
@@ -392,18 +297,11 @@ public class MetodosOpera {
                 
                 stmt.setBinaryStream(4,entra,(int) f.length());
                 
-                // A imagem nao esta sendo enviada - arquivo vazio;
-                
-               // ---------------------------------------------------------
-                
-                
                 stmt.execute();
                 stmt.close();
                 
             } catch (SQLException ex) {
                 Logger.getLogger(Logado.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (FileNotFoundException ex) {
-            Logger.getLogger(MetodosOpera.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
             Logger.getLogger(MetodosOpera.class.getName()).log(Level.SEVERE, null, ex);
             }
