@@ -36,10 +36,22 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnLog = new javax.swing.JButton();
+        lblAvisar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         txtEmail.setText("marcos@marcos.com");
+        txtEmail.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtEmailFocusGained(evt);
+            }
+        });
+
+        txtPassword.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtPasswordFocusGained(evt);
+            }
+        });
 
         jLabel1.setText("Email");
 
@@ -52,24 +64,32 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        lblAvisar.setForeground(new java.awt.Color(255, 51, 51));
+        lblAvisar.setText(" ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(106, 106, 106)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtEmail)
-                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(106, 106, 106)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtEmail)
+                                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(72, 72, 72)
+                                .addComponent(btnLog))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(btnLog)))
+                        .addGap(152, 152, 152)
+                        .addComponent(lblAvisar)))
                 .addContainerGap(115, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -85,7 +105,9 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnLog)
-                .addGap(99, 99, 99))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAvisar)
+                .addGap(79, 79, 79))
         );
 
         pack();
@@ -97,6 +119,7 @@ public class Login extends javax.swing.JFrame {
         if( (txtEmail.getText().equals(""))||(txtPassword.getText().equals("")) )
         {
             System.out.println("Os dois campos sao obrigatórios");
+            lblAvisar.setText("Os dois campos sao \nobrigatórios");
             System.out.println(txtPassword.getText());
         }
         else if(mt.senhacorr(txtPassword.getText(),txtEmail.getText()))
@@ -104,10 +127,24 @@ public class Login extends javax.swing.JFrame {
             Logado loged = new Logado(mt.numeroHotel(txtEmail.getText()));
             mt.centraliza(loged);
             loged.setVisible(true);
+            lblAvisar.setText("sucesso");
 
             this.dispose();
         }
+        else{
+            lblAvisar.setText("Senha Incorreta");
+        }
     }//GEN-LAST:event_btnLogMouseClicked
+
+    private void txtEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtEmailFocusGained
+        // TODO add your handling code here:
+        lblAvisar.setText("");
+    }//GEN-LAST:event_txtEmailFocusGained
+
+    private void txtPasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPasswordFocusGained
+        // TODO add your handling code here:
+        lblAvisar.setText("");
+    }//GEN-LAST:event_txtPasswordFocusGained
 
     /**
      * @param args the command line arguments
@@ -148,6 +185,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton btnLog;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblAvisar;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables

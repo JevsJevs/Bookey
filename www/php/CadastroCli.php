@@ -13,21 +13,19 @@ try {
     $senha2 = $_POST["senha2"];
 
     if ((trim($nome) == '') || (trim($dnasc) == '') || (trim($nick) == '') || (trim($email) == '') || (trim($cel) == '') || (trim($senha1) == '') || (trim($senha2) == '')) {
-        echo "Todos os parametros são obrigatórios, refaça o formulário";
+        header("location: Telas aviso/Cliente/FalhaCadastroAllParamCli.php");
     } else if (verificaSenha($senha1, $senha2)) {
-        echo "As senhas não batem";
+        header("location: Telas aviso/Cliente/FalhaCadastroSenha.php");
     } else if (verificaEmail($email,"Usuario")){
-        echo "E-mail ja cadastrado! , use outro";
+        header("location: Telas aviso/Cliente/FalhaCadastroEmail.php");
         // entrar no banco de dados e verificar se existem emails/ telefone igual iguais
     } else {
         echo $email;
         if(cadastrarUser($nome, $dnasc, $nick, $email, $cel, $senha1)) {
-            echo "<span> Usuário Cadastrado!</span>";
-            header("location: ../html/index.html");
+            header("location: Telas aviso/CadastroConcluido.php");
         }
         else {
-            echo "<span> Falha ao cadastrar</span>";
-            header("location: ../html/CadCli.html");
+            header("location: Telas aviso/Cliente/FalhaCadastro.php");
         }
     }
 }

@@ -37,7 +37,7 @@
 
     <div class="col s10 m10 l10 offset-s1 ">
 
-        <form id="Cadastra" method="post">
+        <form id="Cadastra" method="post" action="../php/CadastroHotel.php">
 
             <div class="row">
                 <div class="col s5 offset-s1">Nome:<br><input type="text" name="nome"></div>
@@ -93,6 +93,10 @@
             <div class="row">
                 <div class="col s5 offset-s1">Senha:<br><input type="password" name="senha1"></div>
                 <div class="col s5">Confirme a Senha: <br><input type="password" name="senha2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col s5 offset-s3">Descrição do seu hotel<textarea name="descreve" rows="5" cols="30"></textarea></div>
             </div>
 
 

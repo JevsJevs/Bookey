@@ -24,11 +24,11 @@ if(isset($_SESSION["myhotel"])) {
             //$codQuarto = obtemPrimary($_SESSION["emailH"],"Hotel");
 
             if ((trim($nQuart) == '') || (trim($nomeft) == '') || (trim($valDia) == '')) {
-                echo "Todos os parametros são obrigatórios, refaça o formulário";
+                header("location: Telas aviso/Quarto/FalhaCadastroAllParamQto.php");
             } else if (!preg_match("/^image\/(jpeg|png|gif)$/", $tipoft)) {
-                echo "<span id='error'>Imagem invalida</span>";
+                header("location: Telas aviso/Quarto/FalhaCadastroQuartoImgInvalida.php");
             } else if ($tamft > MaxSize) {
-                echo "<span id='error'>Imagem grande demais. Max 2mb</span>";
+                header("location: Telas aviso/Quarto/FalhaCadastroQuartoImgGrande.php");
             }else if(repeteNumero($nQuart,$hotel->getId())) {
                 echo "Numero já cadastrado, mude-o";
             } else {
@@ -48,9 +48,14 @@ if(isset($_SESSION["myhotel"])) {
                 $quarto->setImagem($fileBin);
                 $quarto->setValDia($valDia);
 
-                $quarto->cadastrar();
+                if($quarto->cadastrar())
+                {
+                    header("location:LogadoHotel.php");
+                }
+                else
+                    header("location: Telas aviso/Quarto/FalhaCadastroQuartoException");
 
-                header("location:LogadoHotel.php");
+
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();

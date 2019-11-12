@@ -60,7 +60,7 @@ if(isset($_SESSION["logUser"]))
         while($contador<3)
         {
             $linha = $stmt->fetch();
-            echo "<a class=\"carousel-item\"><img class='imgCarro' src='data:image;base64," . base64_encode($linha[Img]) . "'></a> ";
+            echo "<a class=\"carousel-item\"><img class='imgCarro' src='data:image;base64," . base64_encode($linha["Img"]) . "'></a> ";
             $contador++;
         }
         echo "</div>";
@@ -84,6 +84,7 @@ if(isset($_SESSION["logUser"]))
         while($row = $stmt->fetch())
             //foreach($resultado as $row
         {
+            $end = getEndereco($row["idHotel"]);
             //Formatar os cards que vao conter os hotéis.
            echo " 
              <div class=\"row\">
@@ -93,7 +94,8 @@ if(isset($_SESSION["logUser"]))
 		              <div class=\"row\">
 		                  <span class=\"card-title\">$row[nome]</span>
 		                  <a href='FazReserva.php?codHotel=$row[idHotel]'> Reservar</a>
-		                  <p class='truncate'>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+		                  <p class='truncate'>$row[descricao]</p>
+		                  <p class='truncate'>$end</p>
 		                </div>
 		            </div>
 		          </div>
@@ -135,8 +137,8 @@ if(isset($_SESSION["logUser"]))
                                     <span class=\"card-title\">Quarto :$informacoes[nQuarto]</span>
                                     <a hidden>$informacoes[codHotel] </a>
                                     <img class='retrato col s3' src='data:image;base64,".base64_encode($informacoes["Img"])."'>
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
+                                    <p class='col s3 m3 l3'>Valor da diaria: $informacoes[valDiaria] </p>
+                                    <p class='col s3 m3 l3'>Valor total: $informacoes[valTot] </p>
                                 </div>
                             </div>
                         </div>

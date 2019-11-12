@@ -94,15 +94,22 @@ class Quarto
 
     public function cadastrar()
     {
-        $sql = new Sql();
+        try {
+            $sql = new Sql();
 
-        $sql->query("INSERT INTO Quarto (codUser,codHotel,nQuarto,Img,senhaEntra,valDiaria) VALUES (null,:codHotel,:numero,:imagem,null,:valDia)",
-            array(
-               ":codHotel"=>$this->getIdHotel(),
-                ":numero"=>$this->getNumQuarto(),
-                ":imagem"=>$this->getImagem(),
-                ":valDia"=>$this->getValDia()
-            ));
+            $sql->query("INSERT INTO Quarto (codUser,codHotel,nQuarto,Img,senhaEntra,valDiaria) VALUES (null,:codHotel,:numero,:imagem,null,:valDia)",
+                array(
+                    ":codHotel" => $this->getIdHotel(),
+                    ":numero" => $this->getNumQuarto(),
+                    ":imagem" => $this->getImagem(),
+                    ":valDia" => $this->getValDia()
+                ));
+            return true;
+        }
+        catch (Exception $e)
+        {
+            return false;
+        }
     }
 
     public function loadByHotelNum($emailHotel,$numero)

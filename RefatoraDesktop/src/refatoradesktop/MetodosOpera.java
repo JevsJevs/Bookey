@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -72,13 +73,20 @@ public class MetodosOpera {
             if(rs.next())
             {
                 java.sql.Blob blob = rs.getBlob("Img");
-                ImageIcon Icon = new ImageIcon(blob.getBytes(1,(int) blob.length() ) );
-                botao.setIcon(Icon);
+                
+                InputStream in = blob.getBinaryStream();  
+                BufferedImage image = ImageIO.read(in);
+                
+                ImageIcon icon = ajustaDim(botao,image);
+                
+                botao.setIcon(icon);
             }
             
             
         } catch (SQLException ex) {
             System.err.println("Erro no SQL amigão: "+ex);
+        } catch (IOException ex) {
+            Logger.getLogger(MetodosOpera.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
@@ -123,7 +131,7 @@ public class MetodosOpera {
         modelo.setRowCount(0);
         
         try{
-            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT * FROM Quarto WHERE codHotel=23");
+            PreparedStatement stmt = (PreparedStatement) this.con.prepareStatement("SELECT * FROM Quarto WHERE codHotel="+codHotel);
             ResultSet resultado = stmt.executeQuery();
             
             while(resultado.next())
@@ -209,13 +217,26 @@ public class MetodosOpera {
             File f;
             f = new File(arq);
             BufferedImage bf = ImageIO.read(f);
-            ImageIcon icon = new ImageIcon(bf);
+            
+            Image ajustada = bf.getScaledInstance(but.getWidth(),but.getHeight(),1);
+            ImageIcon icon = new ImageIcon(ajustada);
+            
+            
+            
             but.setIcon(icon);
         }catch(Exception e)
         {
             System.err.print(e);
         }
         
+    }
+    
+    public ImageIcon ajustaDim(JButton but, BufferedImage img)
+    {
+        Image ajustada = img.getScaledInstance(but.getWidth(),but.getHeight(),1);
+        ImageIcon icon = new ImageIcon(ajustada);
+        
+        return icon;
     }
     
     public void apagarQuarto(int numeroQto,int nHotel)

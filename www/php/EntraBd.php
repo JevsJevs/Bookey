@@ -60,19 +60,20 @@ function obtemPrimary($email,$table)
     }
 }
 
-function cadastrarHotel($nome,$rua,$bairro,$numero,$cidade,$estado,$email,$tel, $senha1) {
+function cadastrarHotel($nome,$rua,$bairro,$numero,$cidade,$estado,$email,$tel, $senha1, $descric) {
     $returnou = false;
     try {
         $encriptsenha = md5($senha1);
 
         $pdo = conectarBD();
 
-        $stmt = $pdo->prepare("insert into Hotel (nome,senha, email, Telefone) VALUES (:nome, :senha, :email, :tel)");
+        $stmt = $pdo->prepare("insert into Hotel (nome,senha, email, Telefone,descricao) VALUES (:nome, :senha, :email, :tel,:descricao)");
 
         $stmt->bindParam(':nome', $nome);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':tel', $tel);
         $stmt->bindParam(':senha', $encriptsenha);
+        $stmt->bindParam(':descricao', $descric);
 
 
         $stmt->execute();
@@ -94,7 +95,7 @@ function cadastrarHotel($nome,$rua,$bairro,$numero,$cidade,$estado,$email,$tel, 
             $stmt->bindParam(':cidade', $cidade);
             $stmt->bindParam(':estado', $estado);
             $stmt->bindParam(':rua', $rua);
-            $envEmail = obtemPrimaryHotel($email);
+            $envEmail = obtemPrimary($email,"Hotel");
 
             $stmt->bindParam(':HotelCodigo',$envEmail);
 
@@ -275,4 +276,41 @@ function repeteNumero($numero,$hotel)
     }
 
 
+}
+
+function buscaSenhaEmail($email,$tabela)
+{
+    $pdo = conectarBD();
+
+    $stmt = $pdo->prepare("SELECT senha FROM ".$tabela." WHERE email = :EMAIL");
+    //$stmt->bindParam(":TABELA",$tabela);
+    $stmt->bindParam(":EMAIL",$email);
+
+    $stmt->execute();
+
+    $nsenha = substr(md5(time()),0,6);
+
+    $cript = md5($nsenha);
+
+    $stmt2 = $pdo->prepare("UPDATE ".$tabela." SET senha = :NSENHA");
+    //$stmt2->bindParam(":TABELA",$tabela);
+    $stmt2->bindParam(":NSENHA",$cript);
+
+    $stmt2->execute();
+
+    return $nsenha;
+}
+
+function getEndereco($primary)
+{
+    $pdo = conectarBD();
+
+    $stmt = $pdo->prepare("SELECT * FROM Logradouro WHERE HotelCodigo=:prim");
+    $stmt->bindParam(":prim",$primary);
+
+    $stmt->execute();
+
+    $linha = $stmt->fetch();
+
+    return "Rua ".$linha["rua"]." ".$linha["numero"].", ".$linha["bairro"].", ".$linha["cidade"]." - ".$linha["estado"];
 }

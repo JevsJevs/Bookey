@@ -28,7 +28,7 @@ public class Logado extends javax.swing.JFrame {
     Connection con;
     
     public Logado() {
-        System.err.println("Erro no login - Usuario nao identificado");
+        System.err.println("Erro no login - Usuário não identificado");
     }
     
     public Logado(int codHotel)
@@ -476,6 +476,10 @@ public class Logado extends javax.swing.JFrame {
             mo.finalreserva(Integer.parseInt(txtNumero.getText()),Integer.parseInt(lblCod.getText()));
         
         mo.PoeTabela(model,tblTabela,Integer.parseInt(lblCod.getText()));
+        btnFimRes.setVisible(false);
+        txtCin.setText("");
+        txtCout.setText("");
+        txtUser.setText("");
     }//GEN-LAST:event_btnFimResMouseClicked
 
     private void btnConfirmaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConfirmaMouseClicked

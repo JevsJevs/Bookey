@@ -14,20 +14,21 @@ include("EntraBd.php");
         $estado = $_POST["estado"];
         $senha1 = $_POST["senha1"];
         $senha2 = $_POST["senha2"];
+        $descricao = $_POST["descreve"];
 
-        if ((trim($nome) == '') || (trim($rua) == '') || (trim($numero) == '') ||(trim($bairro) == '') || (trim($email) == '') ||(trim($cidade) == '') ||(trim($estado) == '') || (trim($tel) == '') || (trim($senha1) == '') || (trim($senha2) == '')) {
-            echo "Todos os parametros são obrigatórios, refaça o formulário";
+        if ((trim($nome) == '') || (trim($rua) == '') || (trim($numero) == '') ||(trim($bairro) == '') || (trim($email) == '') ||(trim($cidade) == '') ||(trim($estado) == '') || (trim($tel) == '') || (trim($senha1) == '') || (trim($senha2) == '') || (trim($descricao)) == '' ) {
+            header("location: Telas aviso/Hotel/FalhaCadastroAllParamHt.php");
         } else if (verificaSenha($senha1, $senha2)) {
-            echo "As senhas não batem";
+            header("location: Telas aviso/Hotel/FalhaCadastroSenhaht.php");
         } else if (verificaEmail($email,"Hotel")){
-            echo "E-mail ja cadastrado! , use outro";
+            header("location: Telas aviso/Hotel/FalhaCadastroEmailht.php");
             // entrar no banco de dados e verificar se existem emails/ telefone igual iguais
         } else {
 
-            if(cadastrarHotel($nome, $rua,$bairro,$numero, $cidade,$estado, $email, $tel, $senha1))
-                echo "<span> Hotel Cadastrado!</span>";
+            if(cadastrarHotel($nome, $rua,$bairro,$numero, $cidade,$estado, $email, $tel, $senha1,$descricao))
+                header("location: Telas aviso/CadastroConcluido.php");
             else
-                echo "<span> Falha ao cadastrar</span>";
+                header("location: Telas aviso/Hotel/FalhaCadastroht.php");
         }
     }
     catch (PDOException $e)

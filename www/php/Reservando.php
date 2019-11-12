@@ -33,23 +33,28 @@ if(isset($_SESSION["logUser"])){
 
             if($ckIn>$ckout)
             {
-                echo "<span id='error'>Estadia invalida</span>";
+                header("location: Telas aviso/Quarto/EstadiaInvalida.php");
             }
             else {
                 $quarto = new Quarto();
 
                 $quarto->primLivre($idhotl);
 
+                echo $quarto. "<br/>";
+
+                var_dump($quarto->getIdHotel());
+
                 $subtotal = ((strtotime($ckout) - strtotime($ckIn)) / 86400) * $quarto->getValDia();
-                if($quarto==null)
+                if($quarto->getIdHotel()==null)
                 {
-                    echo "<span id='error'>Não existem quartos livres, Volte mais tarde</span>";
+                    header("location: Telas aviso/Quarto/QtoIndisp.php");
+                    echo "entrou";
                 }
                 else{
                     $quarto->reservar($usuario->getId(), $ckIn, $ckout, $subtotal);
+                    header( "location:pag logada.php");
                 }
 
-                header( "location:pag logada.php");
             }
     }
 

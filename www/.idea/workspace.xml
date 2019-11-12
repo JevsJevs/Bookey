@@ -2,35 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d64f586-0ddd-428c-a790-35deb61e3cb8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/built-jar.properties" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/built-jar.properties" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$1.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$1.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$2.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$2.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$3.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$3.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$4.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$4.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$5.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$5.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$6.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$6.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$7.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$7.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$8.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$8.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$1.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$1.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$2.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$2.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/MetodosOpera.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/MetodosOpera.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/RefatoraDesktop.class" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/RefatoraDesktop.class" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/imgTemp.png" afterPath="$PROJECT_DIR$/../RefatoraDesktop/imgTemp.png" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.properties" afterPath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.properties" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.xml" />
-      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/src/refatoradesktop/MetodosOpera.java" afterPath="$PROJECT_DIR$/../RefatoraDesktop/src/refatoradesktop/MetodosOpera.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cascata/classes.css" afterPath="$PROJECT_DIR$/cascata/classes.css" />
-      <change beforePath="$PROJECT_DIR$/html/CadCli.html" afterPath="$PROJECT_DIR$/html/CadCli.html" />
-      <change beforePath="$PROJECT_DIR$/html/CadHotel.html" afterPath="$PROJECT_DIR$/html/CadHotel.html" />
-      <change beforePath="$PROJECT_DIR$/html/CadQuarto.html" afterPath="$PROJECT_DIR$/html/CadQuarto.html" />
-      <change beforePath="$PROJECT_DIR$/php/formLogin.php" afterPath="$PROJECT_DIR$/php/formLogin.php" />
+      <change afterPath="$PROJECT_DIR$/php/formLoginHotel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Logado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/MetodosOpera.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/MetodosOpera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/RefatoraDesktop.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/build/classes/refatoradesktop/RefatoraDesktop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/src/refatoradesktop/Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/src/refatoradesktop/Login.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RefatoraDesktop/src/refatoradesktop/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RefatoraDesktop/src/refatoradesktop/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classe/Quarto.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classe/Quarto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/CadCli.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/CadCli.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/CadHotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/CadHotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/CadQuarto.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/CadQuarto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Reservar.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Reservar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/indexMob.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/indexMob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/CadastroCli.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/CadastroCli.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/CadastroHotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/CadastroHotel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/CadastroQuarto.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/CadastroQuarto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/EntraBd.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/EntraBd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Reservando.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Reservando.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/formLogin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/pag logada.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/pag logada.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,176 +53,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="classes.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cascata/classes.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/EntraBd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="79" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pag logada.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/pag logada.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="159" column="29" lean-forward="false" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
+            <state relative-caret-position="731">
+              <caret line="314" column="34" selection-start-line="314" selection-start-column="34" selection-end-line="314" selection-end-column="34" />
               <folding>
-                <marker date="1571926086000" expanded="true" signature="160:1894" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="175:573" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="588:1894" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="642:1755" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="707:1332" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="778:1313" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="1051:1290" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="1362:1725" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="1412:1706" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="1818:1894" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="1876:1894" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="1969:2007" ph="SELECT Img F... Quarto" />
-                <marker date="1571926086000" expanded="true" signature="2206:2224" ph="data:" />
-                <marker date="1571926086000" expanded="true" signature="2518:2551" ph="select * fro... Hotel" />
-                <marker date="1571926086000" expanded="true" signature="2779:3399" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="2826:3385" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="2878:3368" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="2932:3349" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="2968:3328" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="3511:3537" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="4103:5028" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="4160:5005" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="4224:4978" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="4292:4947" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="4344:4912" ph="..." />
-                <marker date="1571926086000" expanded="false" signature="4589:4607" ph="data:" />
-                <marker date="1571926086000" expanded="true" signature="4686:4873" ph="..." />
-                <marker date="1571926086000" expanded="true" signature="5383:5435" ph="..." />
+                <element signature="n#verificaSenha#0;n#!!top" />
+                <element signature="n#verificaEmail#0;n#!!top" />
+                <element signature="n#obtemPrimary#0;n#!!top" />
+                <element signature="n#cadastrarHotel#0;n#!!top" />
+                <element signature="n#cadastrarUser#0;n#!!top" />
+                <element signature="n#cadastraQuarto#0;n#!!top" />
+                <element signature="n#senhaLogin#0;n#!!top" />
+                <element signature="n#login#0;n#!!top" />
+                <element signature="n#geradorSenhaQto#0;n#!!top" />
+                <element signature="n#verificaCheckOut#0;n#!!top" />
+                <element signature="e#5730#5885#0#PHP" />
+                <element signature="n#repeteNumero#0;n#!!top" />
+                <element signature="n#buscaSenhaEmail#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexMob.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/indexMob.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CadQuarto.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/CadQuarto.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="65" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogadoHotel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/LogadoHotel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-              <folding>
-                <marker date="1571927402000" expanded="true" signature="134:2015" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="149:547" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="571:2015" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="620:1837" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="689:1379" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="768:1356" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="1074:1329" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="1426:1818" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="1480:1795" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="1900:2015" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="2201:2266" ph="select * fro... Quarto" />
-                <marker date="1571927402000" expanded="true" signature="2541:2899" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="2598:2899" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="2670:2899" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="2734:2899" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="2852:2899" ph="..." />
-                <marker date="1571927402000" expanded="false" signature="3169:3223" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="3843:3860" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="3944:4033" ph="select * fro... Quarto" />
-                <marker date="1571927402000" expanded="true" signature="4287:5244" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="4344:5221" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="4406:5194" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="4470:5165" ph="..." />
-                <marker date="1571927402000" expanded="true" signature="4516:5134" ph="..." />
-                <marker date="1571927402000" expanded="false" signature="4659:4677" ph="data:" />
-                <marker date="1571927402000" expanded="true" signature="5611:5671" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formLogin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/formLogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="57" column="59" lean-forward="false" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
-              <folding>
-                <marker date="1572533250000" expanded="true" signature="634:644" ph="..." />
-                <marker date="1572533250000" expanded="true" signature="1615:1640" ph="..." />
-                <marker date="1572533250000" expanded="true" signature="1641:2031" ph="..." />
-                <marker date="1572533250000" expanded="true" signature="1687:1977" ph="..." />
-                <marker date="1572533250000" expanded="true" signature="1758:1818" ph="..." />
-                <marker date="1572533250000" expanded="true" signature="1819:1942" ph="..." />
-                <marker date="1572533250000" expanded="true" signature="1870:1880" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hotel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classe/Hotel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="124" column="25" lean-forward="false" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
-              <folding>
-                <marker date="1571966346000" expanded="true" signature="1133:1173" ph="select * fro... Hotel" />
-                <marker date="1571966346000" expanded="true" signature="1356:1437" ph="INSERT INTO Hotel... " />
-                <marker date="1571966346000" expanded="true" signature="1811:1850" ph="SELECT * FRO... Hotel" />
-                <marker date="1571966346000" expanded="true" signature="2319:2357" ph="SELECT * FRO... Hotel" />
-                <marker date="1571966346000" expanded="true" signature="2822:2962" ph="UPDATE Quarto... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+            <state relative-caret-position="85">
+              <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/pag logada.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-858">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#a#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CadCli.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/CadCli.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Reservando.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="655">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CadHotel.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/CadHotel.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/Reservar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-577">
-              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classe/Quarto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2652" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/FazReserva.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-620" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/EstadiaInvalida.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="37" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/QtoIndisp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroAllParamQto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="36" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -230,57 +172,62 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Classe/User.php" />
-        <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/TerminaReserva.php" />
-        <option value="$PROJECT_DIR$/Reservando.php" />
-        <option value="$PROJECT_DIR$/css/classes.css" />
-        <option value="$PROJECT_DIR$/CascadingSheets/classes.css" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/pag logada.php" />
-        <option value="$PROJECT_DIR$/Classe/Sql.php" />
-        <option value="$PROJECT_DIR$/testador.php" />
-        <option value="$PROJECT_DIR$/EntraBd.php" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/formLogin.php" />
-        <option value="$PROJECT_DIR$/EditaQuarto.php" />
-        <option value="$PROJECT_DIR$/CadastroCli.php" />
-        <option value="$PROJECT_DIR$/CadastroHotel.php" />
-        <option value="$PROJECT_DIR$/php/CadastroHotel.php" />
-        <option value="$PROJECT_DIR$/CadastroQuarto.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/CadastroConcluido.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/FalhaCadastroQuartoException.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/FalhaCadastroQuartoImgInvalida.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/FalhaCadastroAllParamQto.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/FalhaCadastroQuartoImgGrande.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Cliente/FalhaCadastroAllParamCli.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Cliente/FalhaCadastroSenha.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Cliente/FalhaCadastroEmail.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Hotel/FalhaCadastroAllParamHt.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Hotel/FalhaCadastroEmailht.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Hotel/FalhaCadastroht.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/FalhaCadastro.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Cliente/FalhaCadastro.php" />
         <option value="$PROJECT_DIR$/php/CadastroQuarto.php" />
-        <option value="$PROJECT_DIR$/LogadoHotel.php" />
-        <option value="$PROJECT_DIR$/php/config.php" />
-        <option value="$PROJECT_DIR$/html/EditQuarto.html" />
-        <option value="$PROJECT_DIR$/php/FormEditaQuarto.php" />
-        <option value="$PROJECT_DIR$/Classe/Quarto.php" />
-        <option value="$PROJECT_DIR$/html/Reservar.html" />
-        <option value="$PROJECT_DIR$/php/FazReserva.php" />
-        <option value="$PROJECT_DIR$/php/CadastroCli.php" />
-        <option value="$PROJECT_DIR$/php/pag logada.php" />
-        <option value="$PROJECT_DIR$/php/EditaQuarto.php" />
-        <option value="$PROJECT_DIR$/php/LogadoHotel.php" />
-        <option value="$PROJECT_DIR$/php/Reservando.php" />
-        <option value="$PROJECT_DIR$/php/TerminaReserva.php" />
-        <option value="$PROJECT_DIR$/Classe/Hotel.php" />
-        <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/html/CadHotel.html" />
-        <option value="$PROJECT_DIR$/html/CadCli.html" />
-        <option value="$PROJECT_DIR$/html/indexMob.html" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroQuartoImgGrande.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroQuartoImgInvalida.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroQuartoException.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroAllParamQto.php" />
         <option value="$PROJECT_DIR$/html/CadQuarto.html" />
-        <option value="$PROJECT_DIR$/cascata/classes.css" />
-        <option value="$PROJECT_DIR$/php/formLogin.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/formLoginUserMob.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/formLoginHotelMob.php" />
+        <option value="$PROJECT_DIR$/php/config.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/configMob.php" />
+        <option value="$PROJECT_DIR$/php/formLoginUser.php" />
+        <option value="$PROJECT_DIR$/php/CadastroCli.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/EmailEnviado.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/EmailErro.php" />
+        <option value="$PROJECT_DIR$/php/formLoginHotel.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/LoginHotelMob.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/EmailErroMob.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/EmailEnviado.php" />
+        <option value="$PROJECT_DIR$/php/Email/RecuperaSenhaMob.php" />
+        <option value="$PROJECT_DIR$/php/Email/RecuperaSenha.php" />
+        <option value="$PROJECT_DIR$/html/CadCli.html" />
+        <option value="$PROJECT_DIR$/php/Mobile/Avisos/CadastroConcluidoMob.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroMob.php" />
+        <option value="$PROJECT_DIR$/html/CadCliMob.html" />
+        <option value="$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroAllParamCli.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroEmail.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroSenha.php" />
+        <option value="$PROJECT_DIR$/php/Mobile/Formularios/CadastroCliMob.php" />
+        <option value="$PROJECT_DIR$/html/indexMob.html" />
+        <option value="$PROJECT_DIR$/php/Mobile/LoginUserMob.php" />
+        <option value="$PROJECT_DIR$/html/CadHotel.html" />
+        <option value="$PROJECT_DIR$/php/CadastroHotel.php" />
+        <option value="$PROJECT_DIR$/php/EntraBd.php" />
+        <option value="$PROJECT_DIR$/php/pag logada.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Quarto/EstadiaInvalida.php" />
+        <option value="$PROJECT_DIR$/php/Telas aviso/Quarto/QtoIndisp.php" />
+        <option value="$PROJECT_DIR$/php/Reservando.php" />
+        <option value="$PROJECT_DIR$/html/Reservar.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.3" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="172" />
     <option name="y" value="-25" />
     <option name="width" value="1400" />
@@ -288,43 +235,50 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cascata" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="Classe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="Telas aviso" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="Telas aviso" type="462c0819:PsiDirectoryNode" />
+              <item name="Quarto" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,14 +295,19 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\TCC\Eventual Site\www" />
-      <recent name="F:\TCC\Eventual Site\www\Classe" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\TCC\Eventual Site\www\php\Telas aviso\Quarto" />
+      <recent name="F:\TCC\Eventual Site\www\php\Telas aviso\Cliente" />
       <recent name="F:\TCC\Eventual Site\www\php" />
       <recent name="F:\TCC\Eventual Site\www" />
       <recent name="F:\TCC\Eventual Site\www\html" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TCC\Eventual Site\www\php\Mobile\Avisos" />
+      <recent name="D:\TCC\Eventual Site\www\html" />
+      <recent name="D:\TCC\Eventual Site\www\php\Mobile\Formularios" />
+      <recent name="D:\TCC\Eventual Site\www\php\Mobile" />
+      <recent name="D:\TCC\Eventual Site\www\php\Email" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -362,9 +321,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -428,11 +384,16 @@
       <workItem from="1571919879697" duration="6758000" />
       <workItem from="1571964702338" duration="2082000" />
       <workItem from="1572524648571" duration="6847000" />
+      <workItem from="1572984483931" duration="10210000" />
+      <workItem from="1573072321884" duration="4714000" />
+      <workItem from="1573126341044" duration="11739000" />
+      <workItem from="1573500067915" duration="3855000" />
+      <workItem from="1573585341388" duration="8587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213526000" />
+    <option name="totallyTimeSpent" value="252631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,48 +405,50 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.32896462" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="File Transfer" order="10" weight="0.23268399" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.32896462" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="File Transfer" order="10" weight="0.23268399" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,413 +479,481 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cascata/classes.css">
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Cliente/FalhaCadastroSenha.php" />
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Hotel/FalhaCadastroAllParamHt.php" />
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/CadastroConcluido.php" />
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Hotel/FalhaCadastroht.php" />
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Cliente/FalhaCadastro.php" />
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroQuartoImgGrande.php" />
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroQuartoImgInvalida.php" />
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroQuartoException.php" />
+    <entry file="file://$PROJECT_DIR$/html/CadQuarto.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="935">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/pag logada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="159" column="29" lean-forward="true" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/TerminaReserva.php">
+    <entry file="file://$PROJECT_DIR$/php/Mobile/formLoginUserMob.php" />
+    <entry file="file://$PROJECT_DIR$/php/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/LogadoHotel.php">
+    <entry file="file://$PROJECT_DIR$/php/Mobile/configMob.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        <state relative-caret-position="85">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/formLoginUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="109" />
           <folding>
-            <marker date="1571927402000" expanded="true" signature="134:2015" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="149:547" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="571:2015" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="620:1837" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="689:1379" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="768:1356" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1074:1329" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1426:1818" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1480:1795" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1900:2015" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2201:2266" ph="select * fro... Quarto" />
-            <marker date="1571927402000" expanded="true" signature="2541:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2598:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2670:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2734:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2852:2899" ph="..." />
-            <marker date="1571927402000" expanded="false" signature="3169:3223" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="3843:3860" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="3944:4033" ph="select * fro... Quarto" />
-            <marker date="1571927402000" expanded="true" signature="4287:5244" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4344:5221" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4406:5194" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4470:5165" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4516:5134" ph="..." />
-            <marker date="1571927402000" expanded="false" signature="4659:4677" ph="data:" />
-            <marker date="1571927402000" expanded="true" signature="5611:5671" ph="..." />
+            <marker date="1573135680000" expanded="false" signature="743:768" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="769:1662" ph="..." />
+            <marker date="1573135680000" expanded="false" signature="838:855" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="856:1555" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="939:1527" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="1009:1496" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="1098:1459" ph="..." />
+            <marker date="1573135680000" expanded="false" signature="1176:1186" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="1871:1931" ph="..." />
+            <marker date="1573135680000" expanded="false" signature="2259:2284" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="2285:4341" ph="..." />
+            <marker date="1573135680000" expanded="false" signature="2354:2371" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="2372:4234" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="2455:4206" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="2525:4175" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="2614:4138" ph="..." />
+            <marker date="1573135680000" expanded="false" signature="2692:2702" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="2889:3908" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="2942:3858" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="3191:3804" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="3301:3745" ph="..." />
+            <marker date="1573135680000" expanded="true" signature="4550:4610" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/EditaQuarto.php">
+    <entry file="file://$PROJECT_DIR$/php/formLoginHotel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="72" selection-end-column="107" />
+          <folding>
+            <marker date="1573137800000" expanded="false" signature="736:761" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="762:1655" ph="..." />
+            <marker date="1573137800000" expanded="false" signature="831:848" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="849:1548" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="932:1520" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="1002:1489" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="1091:1452" ph="..." />
+            <marker date="1573137800000" expanded="false" signature="1169:1179" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="1864:1924" ph="..." />
+            <marker date="1573137800000" expanded="false" signature="2252:2277" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="2278:4332" ph="..." />
+            <marker date="1573137800000" expanded="false" signature="2347:2364" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="2365:4225" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="2448:4197" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="2518:4166" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="2607:4129" ph="..." />
+            <marker date="1573137800000" expanded="false" signature="2685:2695" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="2882:3899" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="2935:3849" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="3184:3795" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="3294:3736" ph="..." />
+            <marker date="1573137800000" expanded="true" signature="4541:4601" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Mobile/LoginHotelMob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="77" selection-end-column="63" />
+          <folding>
+            <marker date="1573138334000" expanded="false" signature="815:840" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="841:1740" ph="..." />
+            <marker date="1573138334000" expanded="false" signature="910:927" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="928:1633" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="1011:1605" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="1081:1574" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="1170:1537" ph="..." />
+            <marker date="1573138334000" expanded="false" signature="1248:1258" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="1955:2015" ph="..." />
+            <marker date="1573138334000" expanded="false" signature="2352:2377" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="2378:4441" ph="..." />
+            <marker date="1573138334000" expanded="false" signature="2447:2464" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="2465:4334" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="2548:4306" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="2618:4275" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="2707:4238" ph="..." />
+            <marker date="1573138334000" expanded="false" signature="2785:2795" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="2982:4002" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="3035:3952" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="3284:3898" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="3397:3839" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="3616:3839" ph="..." />
+            <marker date="1573138334000" expanded="true" signature="4656:4716" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/EmailEnviado.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
+          <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
+          <folding>
+            <marker date="1573137798000" expanded="false" signature="340:365" ph="..." />
+            <marker date="1573137798000" expanded="true" signature="366:1105" ph="..." />
+            <marker date="1573137798000" expanded="false" signature="419:436" ph="..." />
+            <marker date="1573137798000" expanded="true" signature="437:1050" ph="..." />
+            <marker date="1573137798000" expanded="true" signature="512:1030" ph="..." />
+            <marker date="1573137798000" expanded="true" signature="574:1007" ph="..." />
+            <marker date="1573137798000" expanded="true" signature="655:978" ph="..." />
+            <marker date="1573137798000" expanded="false" signature="725:741" ph="..." />
+            <marker date="1573137798000" expanded="true" signature="1280:1324" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Reservando.php">
+    <entry file="file://$PROJECT_DIR$/php/Mobile/EmailEnviadoMob.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="49" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <marker date="1573138712000" expanded="false" signature="340:365" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="366:1108" ph="..." />
+            <marker date="1573138712000" expanded="false" signature="419:436" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="437:1053" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="512:1033" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="574:1010" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="655:981" ph="..." />
+            <marker date="1573138712000" expanded="false" signature="725:741" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="1283:1327" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/Reservar.html">
+    <entry file="file://$PROJECT_DIR$/php/Mobile/EmailErroMob.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
+          <folding>
+            <marker date="1573138712000" expanded="false" signature="340:365" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="366:1124" ph="..." />
+            <marker date="1573138712000" expanded="false" signature="419:436" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="437:1069" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="512:1049" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="574:1026" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="655:997" ph="..." />
+            <marker date="1573138712000" expanded="false" signature="725:735" ph="..." />
+            <marker date="1573138712000" expanded="true" signature="1299:1343" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/CadastroCli.php">
+    <entry file="file://$PROJECT_DIR$/php/Email/RecuperaSenhaMob.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="1564">
+          <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
+          <folding>
+            <marker date="1573138712000" expanded="true" signature="392:439" ph="SELECT email... ${$tipo}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/EmailErro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <marker date="1573137876000" expanded="false" signature="340:365" ph="..." />
+            <marker date="1573137876000" expanded="true" signature="366:1121" ph="..." />
+            <marker date="1573137876000" expanded="false" signature="419:436" ph="..." />
+            <marker date="1573137876000" expanded="true" signature="437:1066" ph="..." />
+            <marker date="1573137876000" expanded="true" signature="512:1046" ph="..." />
+            <marker date="1573137876000" expanded="true" signature="574:1023" ph="..." />
+            <marker date="1573137876000" expanded="true" signature="655:994" ph="..." />
+            <marker date="1573137876000" expanded="true" signature="725:735" ph="..." />
+            <marker date="1573137876000" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Email/RecuperaSenha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+          <folding>
+            <marker date="1573138722000" expanded="true" signature="392:409" ph="SELECT email... " />
+            <marker date="1573138722000" expanded="true" signature="392:439" ph="SELECT email... TIPO" />
+            <marker date="1573138722000" expanded="true" signature="2190:2191" ph="..." />
+            <marker date="1573138722000" expanded="true" signature="2190:2229" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/CadCli.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classe/Hotel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="124" column="25" lean-forward="true" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
-          <folding>
-            <marker date="1571966346000" expanded="true" signature="1133:1173" ph="select * fro... Hotel" />
-            <marker date="1571966346000" expanded="true" signature="1356:1437" ph="INSERT INTO Hotel... " />
-            <marker date="1571966346000" expanded="true" signature="1811:1850" ph="SELECT * FRO... Hotel" />
-            <marker date="1571966346000" expanded="true" signature="2319:2357" ph="SELECT * FRO... Hotel" />
-            <marker date="1571966346000" expanded="true" signature="2822:2962" ph="UPDATE Quarto... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testador.php" />
-    <entry file="file://$PROJECT_DIR$/php/EntraBd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="274" column="5" lean-forward="true" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
-          <folding>
-            <element signature="n#verificaSenha#0;n#!!top" expanded="false" />
-            <element signature="n#verificaEmail#0;n#!!top" expanded="false" />
-            <element signature="n#obtemPrimary#0;n#!!top" expanded="false" />
-            <element signature="n#cadastrarHotel#0;n#!!top" expanded="false" />
-            <element signature="n#cadastrarUser#0;n#!!top" expanded="false" />
-            <element signature="n#cadastraQuarto#0;n#!!top" expanded="false" />
-            <element signature="n#senhaLogin#0;n#!!top" expanded="false" />
-            <element signature="n#login#0;n#!!top" expanded="false" />
-            <element signature="n#geradorSenhaQto#0;n#!!top" expanded="false" />
-            <element signature="n#verificaCheckOut#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="146" column="13" lean-forward="true" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classe/Sql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CadastroUser.html" />
-    <entry file="file://$PROJECT_DIR$/pag logada.html" />
-    <entry file="file://$PROJECT_DIR$/php/CadastroHotel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/EditQuarto.html" />
-    <entry file="file://$PROJECT_DIR$/php/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/FormEditaQuarto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classe/Quarto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="15" lean-forward="false" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classe/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="164" column="23" lean-forward="false" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/FazReserva.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/CadastroQuarto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/EditaQuarto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="-211">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/CadastroCli.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        <state relative-caret-position="238">
+          <caret line="20" column="88" lean-forward="true" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/Reservar.html">
+    <entry file="file://$PROJECT_DIR$/html/CadCliMob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Reservando.php">
+    <entry file="file://$PROJECT_DIR$/php/Mobile/Formularios/CadastroCliMob.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="98">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/TerminaReserva.php">
+    <entry file="file://$PROJECT_DIR$/php/Mobile/Avisos/CadastroConcluidoMob.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="-7">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <marker date="1573501238000" expanded="false" signature="349:374" ph="..." />
+            <marker date="1573501238000" expanded="true" signature="375:1122" ph="..." />
+            <marker date="1573501238000" expanded="false" signature="428:445" ph="..." />
+            <marker date="1573501238000" expanded="true" signature="446:1067" ph="..." />
+            <marker date="1573501238000" expanded="true" signature="521:1047" ph="..." />
+            <marker date="1573501238000" expanded="true" signature="583:1024" ph="..." />
+            <marker date="1573501238000" expanded="true" signature="664:995" ph="..." />
+            <marker date="1573501238000" expanded="false" signature="734:750" ph="..." />
+            <marker date="1573501238000" expanded="true" signature="1303:1347" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroAllParamCliMob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="107" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
+          <folding>
+            <marker date="1573502090000" expanded="false" signature="349:374" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="375:1157" ph="..." />
+            <marker date="1573502090000" expanded="false" signature="428:445" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="446:1102" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="521:1082" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="583:1059" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="664:1030" ph="..." />
+            <marker date="1573502090000" expanded="false" signature="734:744" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="1338:1382" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroEmailMob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <marker date="1573502090000" expanded="false" signature="349:374" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="375:1140" ph="..." />
+            <marker date="1573502090000" expanded="false" signature="428:445" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="446:1085" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="521:1065" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="583:1042" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="664:1013" ph="..." />
+            <marker date="1573502090000" expanded="false" signature="734:744" ph="..." />
+            <marker date="1573502090000" expanded="true" signature="1321:1365" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/indexMob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="111" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classe/Hotel.php">
+    <entry file="file://$PROJECT_DIR$/img/images (2).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/images.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Dogão.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/images (1).jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroSenhaMob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="107" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Mobile/Avisos/FalhaCadastroMob.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="107" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Mobile/LoginUserMob.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="124" column="25" lean-forward="false" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
-          <folding>
-            <marker date="1571966346000" expanded="true" signature="1133:1173" ph="select * fro... Hotel" />
-            <marker date="1571966346000" expanded="true" signature="1356:1437" ph="INSERT INTO Hotel... " />
-            <marker date="1571966346000" expanded="true" signature="1811:1850" ph="SELECT * FRO... Hotel" />
-            <marker date="1571966346000" expanded="true" signature="2319:2357" ph="SELECT * FRO... Hotel" />
-            <marker date="1571966346000" expanded="true" signature="2822:2962" ph="UPDATE Quarto... " />
-          </folding>
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/LogadoHotel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/CadHotel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-577">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="366">
+          <caret line="94" column="70" lean-forward="true" selection-start-line="94" selection-start-column="70" selection-end-line="94" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/CadCli.html">
+    <entry file="file://$PROJECT_DIR$/php/CadastroHotel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/pag logada.php">
+    <entry file="file://$PROJECT_DIR$/php/CadastroQuarto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="159" column="29" lean-forward="false" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
+        <state relative-caret-position="731">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/EntraBd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="314" column="34" selection-start-line="314" selection-start-column="34" selection-end-line="314" selection-end-column="34" />
           <folding>
-            <marker date="1571926086000" expanded="true" signature="160:1894" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="175:573" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="588:1894" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="642:1755" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="707:1332" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="778:1313" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="1051:1290" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="1362:1725" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="1412:1706" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="1818:1894" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="1876:1894" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="1969:2007" ph="SELECT Img F... Quarto" />
-            <marker date="1571926086000" expanded="true" signature="2206:2224" ph="data:" />
-            <marker date="1571926086000" expanded="true" signature="2518:2551" ph="select * fro... Hotel" />
-            <marker date="1571926086000" expanded="true" signature="2779:3399" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="2826:3385" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="2878:3368" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="2932:3349" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="2968:3328" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="3511:3537" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="4103:5028" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="4160:5005" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="4224:4978" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="4292:4947" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="4344:4912" ph="..." />
-            <marker date="1571926086000" expanded="false" signature="4589:4607" ph="data:" />
-            <marker date="1571926086000" expanded="true" signature="4686:4873" ph="..." />
-            <marker date="1571926086000" expanded="true" signature="5383:5435" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/LogadoHotel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <marker date="1571927402000" expanded="true" signature="134:2015" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="149:547" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="571:2015" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="620:1837" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="689:1379" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="768:1356" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1074:1329" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1426:1818" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1480:1795" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="1900:2015" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2201:2266" ph="select * fro... Quarto" />
-            <marker date="1571927402000" expanded="true" signature="2541:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2598:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2670:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2734:2899" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="2852:2899" ph="..." />
-            <marker date="1571927402000" expanded="false" signature="3169:3223" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="3843:3860" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="3944:4033" ph="select * fro... Quarto" />
-            <marker date="1571927402000" expanded="true" signature="4287:5244" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4344:5221" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4406:5194" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4470:5165" ph="..." />
-            <marker date="1571927402000" expanded="true" signature="4516:5134" ph="..." />
-            <marker date="1571927402000" expanded="false" signature="4659:4677" ph="data:" />
-            <marker date="1571927402000" expanded="true" signature="5611:5671" ph="..." />
+            <element signature="n#verificaSenha#0;n#!!top" />
+            <element signature="n#verificaEmail#0;n#!!top" />
+            <element signature="n#obtemPrimary#0;n#!!top" />
+            <element signature="n#cadastrarHotel#0;n#!!top" />
+            <element signature="n#cadastrarUser#0;n#!!top" />
+            <element signature="n#cadastraQuarto#0;n#!!top" />
+            <element signature="n#senhaLogin#0;n#!!top" />
+            <element signature="n#login#0;n#!!top" />
+            <element signature="n#geradorSenhaQto#0;n#!!top" />
+            <element signature="n#verificaCheckOut#0;n#!!top" />
+            <element signature="e#5730#5885#0#PHP" />
+            <element signature="n#repeteNumero#0;n#!!top" />
+            <element signature="n#buscaSenhaEmail#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="85">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/FalhaCadastroAllParamQto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="36" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/pag logada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cascata/classes.css">
+    <entry file="file://$PROJECT_DIR$/Classe/Quarto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="79" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="-2652" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/FazReserva.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-620" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/EstadiaInvalida.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="37" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/indexMob.html">
+    <entry file="file://$PROJECT_DIR$/php/Telas aviso/Quarto/QtoIndisp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/CadQuarto.html">
+    <entry file="file://$PROJECT_DIR$/php/Reservando.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="65" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="65" />
-          <folding />
+        <state relative-caret-position="655">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/formLogin.php">
+    <entry file="file://$PROJECT_DIR$/html/Reservar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="57" column="59" lean-forward="false" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
-          <folding>
-            <marker date="1572533250000" expanded="true" signature="634:644" ph="..." />
-            <marker date="1572533250000" expanded="true" signature="1615:1640" ph="..." />
-            <marker date="1572533250000" expanded="true" signature="1641:2031" ph="..." />
-            <marker date="1572533250000" expanded="true" signature="1687:1977" ph="..." />
-            <marker date="1572533250000" expanded="true" signature="1758:1818" ph="..." />
-            <marker date="1572533250000" expanded="true" signature="1819:1942" ph="..." />
-            <marker date="1572533250000" expanded="true" signature="1870:1880" ph="..." />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
